@@ -8,9 +8,12 @@ export default  {
 	browserSync: {
 		//proxy: ' localhost:8080',
 		files: [
-			"./**/*.css",
+			"./style.css",
+			"./bundle.js",
 			"./**/*.php",
-			"./**/*.html"
+			"./**/*.png",
+			"./**/*.svg",
+			"./**/*.jpg"
 		]
 	},
 
