@@ -29,8 +29,5 @@ gulp.task('watch', function () {
 	watch(config.images.src, function () {
 		gulp.start('images');
 	});
-	// watch(config.markup.src, function () {
-	// 	gulp.start('markup');
-	// });
 });
 

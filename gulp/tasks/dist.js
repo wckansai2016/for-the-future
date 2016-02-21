@@ -13,8 +13,8 @@ gulp.task('copy', function() {
 	return gulp.src(
 			[
 				'./**/*.php',
-				'./assets/dist/**',
-				'./style.css',
+				'./**/*.css',
+				'./assets/**',
 				"!./dist/**",
 				"!./node_modules/**/*.*"
 			],
