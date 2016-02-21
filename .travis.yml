@@ -1,25 +1,18 @@
 language: php
-
 sudo: false
-
 php:
-  - "5.6"
-
+- '5.3'
 env:
   global:
-    - GIT_COMMITTER_NAME=torounit
-    - GIT_COMMITTER_EMAIL=mail@torounit.com
-    - GIT_AUTHOR_NAME=torounit
-    - GIT_AUTHOR_EMAIL=mail@torounit.com
-    - secure: "LHoTKwuCE25DGFUyino8xo6DX7C7lo8OWUXDR3rbFKIXXTIdkRApaq5vB7sRV4IXK5rlDXYJdTZCnTDON3I63Puwj6g030yygdYmcFQ/Qc8rIWYfdaOExRNS8TvpXTG2ytr6+uTq8VmlvArFZCumf1Mnfv2z+jd1UEPw34oo2us="
-
+  - GIT_COMMITTER_NAME=torounit
+  - GIT_COMMITTER_EMAIL=mail@torounit.com
+  - GIT_AUTHOR_NAME=torounit
+  - GIT_AUTHOR_EMAIL=mail@torounit.com
+  - secure: xBTd0s1JVUq5xUCWDtAErjPlpOjG9z3KsnlgUbYbFdTNBhmq290cIzlCVLE8x+UU7zfxBMjiVEIEzdSuBgf4vLfh2Bx7rkYPC5r+WU/xtZYT4V5rS0kVUBO8VfrtOaw0KFE1nu5PHt0gSDYaA6PtpZTwflurMD+MyN8P/hy1yKVQCq9NYm9I2KtxRtNiIlQhnP6WykvSUdphcc28v4XD09+2ltnhqXdLFn0jp3odyCx+/8906rV5xD50SELCw1d8i/I4BkZX0Y02cUKAR2lHjf5gy4wseHoZn4IW3NYKMpkZOPIu2ggo8j5W3U7faDqjugNNKeMeKjtfacSowEyHcr1NZas26dZnG1kesnEySPa42ubH1lb8oWFqgfVY9ndfJaJoRZLGa5Vx8iYD++Dm+ScZKz78htxPOONBBAaFMlIuPo5z5US/Mb3R/Pcc2KU4TnfnWAoRK/4JKOlrI5zJ/9rR4CMkP7EAUU2HZMV9KpCSRQX1zx+7sMsKPg356h23R5Riz4aT7nHDGUstqkm95o+DFkSOjOuxSPh/MfZO7lm0k9AIIsTheldZhFi173xHM+LhdGl3d+IZBWGHR0CEMz/Rzj7PbhZ3jwj46YXmqpvcankn7oe/laLxyC7iPK1BBXBGTJf5NWR/NMHnDrcIvQWkCn0wEXzCWJY63TK7abs=
 before_script:
-  - nvm install 4.2
-  - npm install
-
+- nvm install 4.2
+- npm install
 script:
-  # Search for PHP syntax errors.
-  - find . \( -name '*.php' \) -exec php -lf {} \;
-
+- find . \( -name '*.php' \) -exec php -lf {} \;
 after_success:
-  - bash ./bin/deploy.sh
+- bash ./bin/deploy.sh
