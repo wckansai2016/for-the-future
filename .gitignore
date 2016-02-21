@@ -1,6 +1,6 @@
 node_modules
 vendor
 .sass-cache
-assets/dist
-docs/styleguide
+bundle.js
+style.css
 dist
