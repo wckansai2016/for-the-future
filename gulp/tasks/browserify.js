@@ -53,16 +53,3 @@ gulp.task('browserify', function () {
 	}
 	return bundle();
 });
-
-gulp.task('browserify:dist', function () {
-
-	return b.bundle()
-		.pipe(source(config.browserify.filename))
-		.pipe(buffer())
-		.pipe(uglify())
-		.pipe(rename({
-			extname: ".min.js"
-		}))
-		.pipe( debug() )
-		.pipe(gulp.dest(config.browserify.dest));
-});

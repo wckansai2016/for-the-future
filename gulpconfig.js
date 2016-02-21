@@ -12,7 +12,7 @@ export default  {
 	 *
 	 */
 	browserSync: {
-		proxy: 'dev.torounit.com',
+		proxy: 'dev.torounit.com', //set your env hostname.
 		files: [
 			"./**/*.css",
 			"./**/*.php",

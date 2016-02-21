@@ -14,8 +14,10 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'autoprefixer';
+import rename from 'gulp-rename';
 import postcss from 'gulp-postcss';
 import atImport from "postcss-import";
+import debug from 'gulp-debug';
 
 var processors = [
 	autoprefixer(),
@@ -42,6 +44,7 @@ gulp.task('sass', function () {
 			includeContent: false,
 			sourceRoot: config.sass.sourceRoot
 		}))
+		.pipe( debug() )
 		.pipe(gulp.dest(config.sass.dest));
 });
 

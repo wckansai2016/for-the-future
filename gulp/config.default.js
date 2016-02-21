@@ -20,7 +20,7 @@ export default  {
 	 *
 	 */
 	sass: {
-		src: './sass/**/*.{sass,scss}',
+		src: './src/styles/**/*.{sass,scss}',
 		dest: './'
 	},
 
@@ -33,10 +33,10 @@ export default  {
 		bundleOption: {
 			cache: {}, packageCache: {}, fullPaths: false,
 			debug: true,
-			entries: dir.src + '/scripts/main.js',
-			extensions: ['js', 'jsx']
+			entries: './src/scripts/main.js',
+			extensions: [ 'js' ]
 		},
-		dest: dir.dist + '/scripts/',
+		dest: './',
 		filename: 'bundle.js'
 
 	}
