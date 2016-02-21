@@ -14,7 +14,7 @@
 
 ## Get Started
 
-Node.js 5 で動作します。
+Node.js 5 以上 で動作します。 4系の人はアップデートしてください。
 
 ```
 $ npm install
@@ -29,4 +29,15 @@ Open [localhost:3000](localhost:3000) !
 * `gulp build` : CSS / JS のビルドを実行。
 * `gulp dist` : `./dist` に配布用のテーマを作成。
 
+
+## Gulp Configuration
+
+BrowserSync で ローカルサーバーが立ち上がりますが、node.js のサーバーでは、PHP が動作しないため、Xampp 、MAMP 、VCCW 、ビルトインサーバー等への Proxy の設定が必要です。
+`gulpconfig.js.sample` を参考に、`gulpconfig.js` を変更してください。
+
+
 ## Auto Build Theme.
+
+master ブランチへ push すると、travis-ci が `gulp dist` を実行し、配布用のテーマを dist ブランチへコミットします。
+
+[最新の配布用テーマのダウンロード](https://github.com/wckansai2016/theme-env-sample/archive/dist.zip)
