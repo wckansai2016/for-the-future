@@ -12,7 +12,7 @@ export default  {
 	 *
 	 */
 	browserSync: {
-		proxy: 'localhost:8080', //set your env hostname.
+		proxy: 'localhost:8080', //各の開発環境に合わせて変更してください。
 		files: [
 			"./style.css",
 			"./bundle.js",

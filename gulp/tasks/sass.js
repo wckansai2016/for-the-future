@@ -47,11 +47,3 @@ gulp.task('sass', function () {
 		.pipe( debug() )
 		.pipe(gulp.dest(config.sass.dest));
 });
-
-gulp.task('sass:dist', function () {
-	return gulp.src(config.sass.src)
-		.pipe(bulkSass())
-		.pipe(sass())
-		.pipe(postcss(processors))
-		.pipe(gulp.dest(config.sass.dest));
-});

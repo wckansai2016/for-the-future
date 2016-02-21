@@ -5,3 +5,4 @@ bundle.js
 style.css
 gulpconfig.js
 dist
+*.map
