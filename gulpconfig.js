@@ -4,8 +4,6 @@
  *
  */
 
-import dir from "./gulp/config.directory";
-
 export default  {
 
 	/**
@@ -16,7 +14,7 @@ export default  {
 	browserSync: {
 		proxy: 'dev.torounit.com',
 		files: [
-			dir.dist + '/**',
+			"./**/*.css",
 			"./**/*.php",
 			"./**/*.html"
 		]

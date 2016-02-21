@@ -1,9 +1,9 @@
 {
-  "name": "wordcampkansai2016/theme-env-sample",
+  "name": "theme-env-sample",
   "description": "theme-env-sample",
   "author": {
-    "name": "wordcampkansai2016",
-    "email": "wordcampkansai2016@example.com"
+    "name": "wck2016",
+    "email": "wck2016@example.com"
   },
   "license": "GPL-3.0+",
   "homepage": "https://github.com/wckansai2016/theme-env-sample",

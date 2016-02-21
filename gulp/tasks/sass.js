@@ -14,11 +14,8 @@ import plumber from 'gulp-plumber';
 import sass from 'gulp-sass';
 import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'autoprefixer';
-import rename from 'gulp-rename';
 import postcss from 'gulp-postcss';
 import atImport from "postcss-import";
-import cssnano from 'cssnano';
-import debug from 'gulp-debug';
 
 var processors = [
 	autoprefixer(),
@@ -53,10 +50,5 @@ gulp.task('sass:dist', function () {
 		.pipe(bulkSass())
 		.pipe(sass())
 		.pipe(postcss(processors))
-		.pipe(postcss( [cssnano()] ))
-		.pipe(rename({
-			extname: ".min.css"
-		}))
-		.pipe( debug() )
 		.pipe(gulp.dest(config.sass.dest));
 });

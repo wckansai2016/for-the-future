@@ -1,16 +1,4 @@
-import dir from "./config.directory";
-
 export default  {
-
-	fonts: {
-		src: dir.src + '/fonts/**/*',
-		dest: dir.dist + '/fonts'
-	},
-
-	images: {
-		src: dir.src + '/images/**/*.{png,jpg,gif,svg,jpg}',
-		dest: dir.dist + '/images'
-	},
 
 	/**
 	 *
@@ -20,7 +8,7 @@ export default  {
 	browserSync: {
 		//proxy: ' localhost:8080',
 		files: [
-			dir.dist + '/**',
+			"./**/*.css",
 			"./**/*.php",
 			"./**/*.html"
 		]
@@ -32,7 +20,7 @@ export default  {
 	 *
 	 */
 	sass: {
-		src: dir.src + '/styles/**/*.scss',
+		src: './sass/**/*.{sass,scss}',
 		dest: './'
 	},
 
@@ -45,11 +33,11 @@ export default  {
 		bundleOption: {
 			cache: {}, packageCache: {}, fullPaths: false,
 			debug: true,
-			entries: dir.src + '/scripts/all.js',
+			entries: dir.src + '/scripts/main.js',
 			extensions: ['js', 'jsx']
 		},
 		dest: dir.dist + '/scripts/',
-		filename: 'all.js'
+		filename: 'bundle.js'
 
 	}
 };
