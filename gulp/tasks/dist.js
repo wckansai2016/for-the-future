@@ -14,8 +14,15 @@ gulp.task('copy', function() {
 			[
 				'./**/*.php',
 				'./**/*.css',
-				'./assets/**',
 				"!./dist/**",
+				"!./bin/**",
+				"!./gulp/**",
+				"!.travis.yml",
+				"!.gitignore",
+				"!.editorconfig",
+				"!.github/**",
+				"!composer.json",
+				"!bower.json",
 				"!./node_modules/**/*.*"
 			],
 			{ base: './' }

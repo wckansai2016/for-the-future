@@ -9,8 +9,8 @@ import gulp from 'gulp';
 // ==================================
 
 
-gulp.task('build', [ 'sass', 'images', 'browserify']);
-gulp.task('build:dist', ['build', 'sass:dist']);
+gulp.task('build', [ 'sass', 'browserify']);
+gulp.task('build:dist', [ 'sass:dist', 'browserify']);
 gulp.task('default', ['setWatch', 'build', 'watch', 'browserSync']);
 
 
