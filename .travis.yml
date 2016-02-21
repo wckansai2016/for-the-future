@@ -4,10 +4,10 @@ php:
 - '5.3'
 env:
   global:
-  - GIT_COMMITTER_NAME=torounit
-  - GIT_COMMITTER_EMAIL=mail@torounit.com
-  - GIT_AUTHOR_NAME=torounit
-  - GIT_AUTHOR_EMAIL=mail@torounit.com
+  - GIT_COMMITTER_NAME=travis-ci
+  - GIT_COMMITTER_EMAIL=wck2016@travis-ci.org
+  - GIT_AUTHOR_NAME=travis-ci
+  - GIT_AUTHOR_EMAIL=wck2016@travis-ci.org
   - secure: xBTd0s1JVUq5xUCWDtAErjPlpOjG9z3KsnlgUbYbFdTNBhmq290cIzlCVLE8x+UU7zfxBMjiVEIEzdSuBgf4vLfh2Bx7rkYPC5r+WU/xtZYT4V5rS0kVUBO8VfrtOaw0KFE1nu5PHt0gSDYaA6PtpZTwflurMD+MyN8P/hy1yKVQCq9NYm9I2KtxRtNiIlQhnP6WykvSUdphcc28v4XD09+2ltnhqXdLFn0jp3odyCx+/8906rV5xD50SELCw1d8i/I4BkZX0Y02cUKAR2lHjf5gy4wseHoZn4IW3NYKMpkZOPIu2ggo8j5W3U7faDqjugNNKeMeKjtfacSowEyHcr1NZas26dZnG1kesnEySPa42ubH1lb8oWFqgfVY9ndfJaJoRZLGa5Vx8iYD++Dm+ScZKz78htxPOONBBAaFMlIuPo5z5US/Mb3R/Pcc2KU4TnfnWAoRK/4JKOlrI5zJ/9rR4CMkP7EAUU2HZMV9KpCSRQX1zx+7sMsKPg356h23R5Riz4aT7nHDGUstqkm95o+DFkSOjOuxSPh/MfZO7lm0k9AIIsTheldZhFi173xHM+LhdGl3d+IZBWGHR0CEMz/Rzj7PbhZ3jwj46YXmqpvcankn7oe/laLxyC7iPK1BBXBGTJf5NWR/NMHnDrcIvQWkCn0wEXzCWJY63TK7abs=
 before_script:
 - nvm install 5
