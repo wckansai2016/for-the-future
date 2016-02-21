@@ -33,7 +33,7 @@ export default  {
 	 */
 	sass: {
 		src: dir.src + '/styles/**/*.scss',
-		dest: dir.dist + '/styles'
+		dest: './'
 	},
 
 	/**
