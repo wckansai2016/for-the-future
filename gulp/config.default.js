@@ -6,7 +6,7 @@ export default  {
 	 *
 	 */
 	browserSync: {
-		proxy: ' localhost:8080',
+		proxy: 'localhost:8080',
 		files: [
 			"./style.css",
 			"./bundle.js",
