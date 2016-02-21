@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git://github.com/wckansai2016/theme-env-sample.git"
   },
+  "engines" : {
+    "node" : ">=5.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "babel-preset-es2015": "^6.5.0",
