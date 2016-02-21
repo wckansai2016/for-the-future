@@ -3,5 +3,5 @@ vendor
 .sass-cache
 bundle.js
 style.css
-#gulpconfig.js
+gulpconfig.js
 dist
