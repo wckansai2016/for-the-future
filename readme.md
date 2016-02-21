@@ -21,7 +21,7 @@ $ npm install
 $ vi gulpconfig.js
 $ gulp
 ```
-Open [localhost:3000](localhost:3000) !
+Open [localhost:3000](http://localhost:3000) !
 
 
 ## Gulp Tasks
