@@ -1,5 +1,6 @@
 <?php
 
+
 if ( ! function_exists( 'for_the_future_setup' ) ) :
 
 	function for_the_future_setup() {
@@ -63,7 +64,7 @@ function catch_that_image() {
 	$first_img = "";
 
 	if ( empty( $first_img ) ) { //Defines a default image
-		$first_img = "/images/default.jpg";
+		$first_img = path_join( get_template_directory_uri(), 'images/default.jpg' );
 	}
 
 	return $first_img;
