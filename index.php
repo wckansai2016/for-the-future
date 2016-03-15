@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="gallery_container">
+<div class="gallery-container">
 <?php if(have_posts()): while(have_posts()):the_post();?>
 <article <?php post_class();?>>
 
