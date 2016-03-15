@@ -16,6 +16,6 @@ before_script:
 script:
 - ls -al style.css
 - ls -al bundle.js
-- find . \( -name '*.php' \) -exec php -lf {} \;
+- if find . -name "*.php" -exec php -l {} \; | grep "^[Parse error|Fatal error]"; then exit 1; fi;
 after_success:
 - bash ./bin/deploy.sh
