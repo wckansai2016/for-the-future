@@ -10,7 +10,7 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'for_the_future' ),
+			'primary' => esc_html__( 'Primary', 'for-the-future' ),
 		) );
 
 		add_theme_support( 'html5', array(
