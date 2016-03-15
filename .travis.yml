@@ -9,6 +9,9 @@ env:
   - GIT_AUTHOR_NAME=travis-ci
   - GIT_AUTHOR_EMAIL=wck2016@travis-ci.org
   - secure: m6x6Mc24+AbxayJPxLtuhF/+9Yn3RnaprWnUXuwii0lMoi2jIepbKs95ljmGncI7OUeeM7Pge++kxGG7NZeT/oKd6mGePhNVIJOQwY3mIzqbEh2g1CZ3vWUbMATze0o1YomXdDVWLXu4kmXxnU+aylkirPCua016FUlFSVYmEFma8QPKLOYnZRhz6S/inxCiwXXAS5RvnMCZU8E9AKOJ2DnF9h/AefX8ZcEVqK0cN3LV92/B9Qq3tVcVK/a77YB5oO0aY89q0gGCCJCIdry+SSmFgRsbAp4flRpiUoMEBqk3qa+Yb9cxGUBHhBb6fsQ1RaWDsdqpF81YggE4FeV7zH63OwT1EcaeLCXWR1uKR1r8+qPnv3oYsPyZMZfF+TxXrY+cQBvPb+0DgScPeUysoJnNScrQ2WGlaTY2Kakhu8Bv+NXue03xKHnrHUxri0pOBSLKFWzq5S1bdVk6QwtwNoo0yvqFkP1wgplOt1Cb42TYWz99MO59jNXAinV5hvQY9VLJLrxZaeR3FL+j7hVNkPoW89VxVSU9ejzVISpQcjZZ6TqPq/E6MgEKu8Mi+f5gDG9M9pvPWyFqufgDjKRNEtGok0LcwlAzAoGjyf4NducLBfhScafhisO9pgWAA61U4S7PJydYHx3YgM92HZ+ktSRHJRbQjcB85mp/guw4/ZQ=
+cache:
+ directories:
+ - node_modules
 before_script:
 - nvm install 5
 - npm install
