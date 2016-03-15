@@ -13,8 +13,6 @@
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/font-awesome-4.5.0/css/font-awesome.min.css" />
 	<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/earlyaccess/notosansjapanese.css' rel='stylesheet' type='text/css'>
-
-	<!-- OGPあとで -->
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
