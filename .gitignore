@@ -6,3 +6,4 @@ style.css
 gulpconfig.js
 dist
 *.map
+.DS_Store

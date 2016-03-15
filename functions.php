@@ -52,3 +52,20 @@ function theme_env_sample_scripts() {
 	wp_enqueue_script( 'theme-env-sample-script', get_template_directory_uri() . '/bundle.js', array( 'jquery' ), $theme_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'theme_env_sample_scripts' );
+
+/**
+ * first image
+ */
+function catch_that_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=&#91;'"&#93;(&#91;^'"&#93;+)&#91;'"&#93;.*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+
+	if(empty($first_img)){ //Defines a default image
+		$first_img = "/images/default.jpg";
+	}
+	return $first_img;
+}
