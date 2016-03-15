@@ -19,3 +19,6 @@ script:
 - if find . -name "*.php" -exec php -l {} \; | grep "^[Parse error|Fatal error]"; then exit 1; fi;
 after_success:
 - bash ./bin/deploy.sh
+notifications:
+  slack:
+    secure: UtkZimyOy5SUqBc1+IKB9HbcYq+Ym0qdOEqRzUXetUe1UA2Eq4HAPUI4A9bnnp0pFg3Yfd7xWMBcjZV1b/nI2LSbgjzKHFMH5NfAVp6YMjtHG7MWLY0t5gzPiHJ/e+Mj+H2JKcyYleOvX/a7O2McRY+7VPDjBQSudCw+3+NPLCiott68iIR7mW3yfiy91R5IyndAXbDZtAv4ZViaSDHXBHo1WSwHHPB02JjwmblRiY3dqDl7dqHwVQNmHhHAxJB71F16vGSkyi728beL2iIc338l9h0mpK+RpHIGn416wVyu5gOG5z0iCos7PUqU7Lz6cVumSmSOYspAMjtMSo9YWNuA7YMhDimiQdjqSZMECp1Jc0cZSNwsxJSDUrKqQKX2stM3dDpOFGVjYidNLiLA1OI1Hh0mh5NeSEjWefJHoYrP+gVXaaquGKL059/O9HDfMBQaKK4wF+giKY0hQWIcpAPi7lAUlF4+exPcBrsRwjE8GO0smEiVaUki068hby397lH/U6mORxG4pvbNXoSuwRoEMRJk5hyOG1mlMojvGwxD/ifM046TAG2fcMSV0Nsz0IAkC7ITvjEuzx5gCFw3AbjLsX896VblnsGqFbOFmHbknCrYMl54gFp4FyBsVoBFzyVYX1y/gcHJjxTuHoe1wHFbzK4mgp2aHodbeqPHZxA=
