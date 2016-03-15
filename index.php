@@ -9,7 +9,9 @@
 			if( has_post_thumbnail() ) :
 				echo get_the_post_thumbnail( $post->ID, 'full' );
 			else :
-				echo "<img src=" . catch_that_image() . " alt=\"\" />";
+		?>
+		<img src="<?php catch_that_image(); ?>" alt="" />
+		<?php
 			endif;
 		?>
 	</a></div>
