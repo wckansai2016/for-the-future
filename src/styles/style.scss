@@ -46,7 +46,7 @@ header {
 		margin: 0 auto;
 	}
 }
-.nav_btn {
+.nav-btn {
 	display: block;
 	width: 40px;
 	cursor: pointer;
@@ -129,7 +129,7 @@ header {
 		}
 	}
 }
-#gnav.nav_open {
+#gnav.nav-open {
 	right: 0;
 }
 .overlay {
@@ -179,12 +179,12 @@ header {
 .search-submit {
 	display: none;
 }
-/* gallery_container */
-.gallery_container {
+/* gallery-container */
+.gallery-container {
 	display: flex;
 	flex-wrap: wrap;
 }
-.gallery_container article {
+.gallery-container article {
 	width: 22.7%;
 	margin-right: 3%;
 	overflow: hidden;

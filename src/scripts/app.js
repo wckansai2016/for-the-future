@@ -3,12 +3,12 @@ $(document).ready(function() {
 // ハンバーガーメニュー
 	$('header').prepend('<div class="overlay"></div>');
 
-	$('.nav_btn').click(function() {
-		$('#gnav').toggleClass('nav_open');
+	$('.nav-btn').click(function() {
+		$('#gnav').toggleClass('nav-open');
 	});
 
 	$('.overlay').click(function() {
-		$('#gnav').removeClass('nav_open');
+		$('#gnav').removeClass('nav-open');
 	});
 
 }
