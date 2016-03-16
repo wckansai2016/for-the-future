@@ -16,7 +16,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<header class="site-head">
-		<h1 class="logo"><?php bloginfo( 'name' ); ?></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
+		<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
 		<button type="button" class="nav-btn">
 			<span></span>
 			<span></span>
