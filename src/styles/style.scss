@@ -33,7 +33,7 @@ body {
 }
 
 /* layout */
-header {
+.site-head {
 	height: 125px;
 	display: flex;
 	text-align: center;
@@ -93,8 +93,11 @@ header {
 		li {
 			padding: 20px;
 			list-style: none;
-			color: #ffffff;
 			text-shadow: 1px 1px 4px #616161;
+			a, a:hover, a:visited, a:active {
+				color: #ffffff;
+				text-decoration: none;
+			}
 		}
 	}
 	> ul > li {

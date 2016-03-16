@@ -15,7 +15,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<header>
+	<header class="site-head">
 		<h1 class="logo"><?php bloginfo( 'name' ); ?></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
 		<button type="button" class="nav-btn">
 			<span></span>
@@ -25,23 +25,12 @@
 		</button>
 		<nav id="gnav">
 			<?php get_search_form(); ?>
-			<!-- カスタムメニュー -->
-			<ul>
-				<li>大カテゴリー1</li>
-				<li>大カテゴリー2</li>
-				<li>大カテゴリー3
-					<ul>
-						<li>中カテゴリー1</li>
-						<li>中カテゴリー2</li>
-						<li>中カテゴリー3
-							<ul>
-								<li>小カテゴリー1</li>
-								<li>小カテゴリー2</li>
-								<li>小カテゴリー3</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'global_nav',
+				'container' => '',
+				'menu_class' => '',
+				'depth' => 3,
+				'items_wrap' => '<ul>%3$s</ul>'));
+			?>
 		</nav>
 	</header>
