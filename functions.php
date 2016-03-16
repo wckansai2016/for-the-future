@@ -63,7 +63,7 @@ function catch_that_image() {
 	$first_img = "";
 
 	if ( empty( $first_img ) ) { //Defines a default image
-		$first_img = "/images/default.jpg";
+		$first_img = "https://placehold.jp/15/3d4070/ffffff/2000x1000.png?text=a";
 	}
 
 	return $first_img;
