@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 	<header>
 		<h1 class="logo"><?php bloginfo( 'name' ); ?></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
-		<p class="nav_btn">
+		<p class="nav-btn">
 			<span></span>
 			<span></span>
 			<span></span>

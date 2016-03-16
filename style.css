@@ -366,7 +366,7 @@ header h1.logo {
     font-weight: 700;
     font-size: 1.722em;
     margin: 0 auto; }
-.nav_btn {
+.nav-btn {
   display: block;
   width: 40px;
   cursor: pointer;
@@ -375,15 +375,15 @@ header h1.logo {
   top: 44px;
   right: 0;
   margin: 0; }
-.nav_btn span {
+.nav-btn span {
     display: block;
     margin: 0 auto 5px;
     height: 3px;
     width: 26px;
     background: #787878; }
-.nav_btn span:nth-of-type(3) {
+.nav-btn span:nth-of-type(3) {
       margin-bottom: 0; }
-.nav_btn span.menu {
+.nav-btn span.menu {
     display: inline;
     font-size: 0.667em;
     background: none;
@@ -434,7 +434,7 @@ header h1.logo {
 #gnav > ul > li > ul > li > ul > li:before {
           content: url(images/ico_gnav_s.png);
           margin-right: 15px; }
-#gnav.nav_open {
+#gnav.nav-open {
   right: 0; }
 .overlay {
   position: fixed;
@@ -474,8 +474,8 @@ header h1.logo {
   font-size: 1.1em; }
 .search-submit {
   display: none; }
-/* gallery_container */
-.gallery_container {
+/* gallery-container */
+.gallery-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -483,7 +483,7 @@ header h1.logo {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-.gallery_container article {
+.gallery-container article {
   width: 22.7%;
   margin-right: 3%;
   overflow: hidden; }
