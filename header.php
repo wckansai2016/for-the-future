@@ -17,12 +17,12 @@
 <body <?php body_class(); ?>>
 	<header>
 		<h1 class="logo"><?php bloginfo( 'name' ); ?></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
-		<p class="nav-btn">
+		<button type="button" class="nav-btn">
 			<span></span>
 			<span></span>
 			<span></span>
 			<span class="menu">MENU</span>
-		</p>
+		</button>
 		<nav id="gnav">
 			<?php get_search_form(); ?>
 			<!-- カスタムメニュー -->
