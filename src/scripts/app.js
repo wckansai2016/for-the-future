@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	// hamburger menu
+// ハンバーガーメニュー
 	$('header').prepend('<div class="overlay"></div>');
 
 	$('.nav-btn').click(function() {

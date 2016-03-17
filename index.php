@@ -4,19 +4,17 @@
 <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
 <article <?php post_class(); ?>>
 
-	<div class="img-center">
-		<a href="<?php the_permalink(); ?>">
+	<div class="img-list"><a href="<?php the_permalink(); ?>">
 		<?php
 			if( has_post_thumbnail() ) :
 				echo get_the_post_thumbnail( $post->ID, 'full' );
 			else :
 		?>
-		<img src="<?php echo catch_that_image(); ?>" alt="" />
+		<img src="<?php catch_that_image(); ?>" alt="" />
 		<?php
 			endif;
 		?>
-		</a>
-	</div>
+	</a></div>
 	<!--
 	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	-->
