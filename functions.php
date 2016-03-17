@@ -56,6 +56,7 @@ function for_the_future_scripts() {
 add_action( 'wp_enqueue_scripts', 'for_the_future_scripts' );
 
 /**
+<<<<<<< HEAD
  * first image
  */
 function catch_that_image() {
@@ -72,3 +73,12 @@ function catch_that_image() {
 	return $first_img;
 }
 
+=======
+ * custom menu
+ */
+function for_the_future_register_menu() {
+	register_nav_menu('global_nav', __('global navigation', 'for-the-future'));
+}
+
+add_action( 'after_setup_theme', 'for_the_future_register_menu' );
+>>>>>>> master
