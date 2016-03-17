@@ -24,7 +24,7 @@
 
 				<?php if ( is_single() ) : ?>
 					<div class="entry-meta clearfix">
-						<time class="entry-date"><?php get_the_modified_time( 'Y/m/d' ); ?></time>
+						<time class="entry-date"><?php the_modified_date( 'Y/m/d' ); ?></time>
 						<dl class="entry-category">
 							<dt><i class="fa fa-folder-o" aria-label="category"></i></dt>
 							<dd><?php the_category(', '); ?></dd>
