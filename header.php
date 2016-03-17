@@ -5,9 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
-	<!--[if lt IE 9]>
-	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/src/scripts/html5.js"></script>
-	<![endif]-->
 
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/font-awesome-4.5.0/css/font-awesome.min.css" />
 	<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700' rel='stylesheet' type='text/css'>
