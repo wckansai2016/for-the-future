@@ -20,7 +20,7 @@
 			<span></span>
 			<span class="menu">MENU</span>
 		</button>
-		<nav id="gnav">
+		<nav class="gnav">
 			<?php get_search_form(); ?>
 			<?php wp_nav_menu( array(
 				'theme_location' => 'global_nav',

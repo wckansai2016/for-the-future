@@ -11,7 +11,7 @@
 				echo get_the_post_thumbnail( $post->ID, 'large' );
 			else :
 		?>
-		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png" alt="<?php the_title(); ?>" />
+		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png" alt="<?php the_title(); ?>" style="width: 100%;" />
 		<?php
 			endif;
 		?>
@@ -26,6 +26,5 @@
 </article>
 <?php endwhile; endif; ?>
 </div>
-<?php wp_footer(); ?>
-</body>
-</html>
+
+<?php get_footer(); ?>
