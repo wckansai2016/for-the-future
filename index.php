@@ -8,10 +8,10 @@
 		<a href="<?php the_permalink(); ?>">
 		<?php
 			if( has_post_thumbnail() ) :
-				echo get_the_post_thumbnail( $post->ID, 'full' );
+				echo get_the_post_thumbnail( $post->ID, 'large' );
 			else :
 		?>
-		<img src="<?php echo catch_that_image(); ?>" alt="" />
+		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png" alt="<?php the_title(); ?>" />
 		<?php
 			endif;
 		?>
