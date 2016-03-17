@@ -123,3 +123,19 @@
 	  font-size: 16px;
 	}
 }
+.nav-links {
+	a, a:hover, a:visited, a:active {
+		color: #575757;
+		text-decoration: none;
+	}
+	.nav-previous {
+		img {
+			margin-right: 10px;
+		}
+	}
+	.nav-next {
+		img {
+			margin-left: 10px;
+		}
+	}
+}

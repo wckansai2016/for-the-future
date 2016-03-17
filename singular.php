@@ -54,10 +54,10 @@
 
 	<?php
 		if ( is_single() ) :
-		// arrow画像にしたい
+			$temp_dir = esc_url( get_template_directory_uri() );
 			the_post_navigation(array(
-				'prev_text' => '< PREV',
-				'next_text' => 'NEXT >'
+				'prev_text' => '<img src="'.$temp_dir.'/images/ico_arrow_prev.png">'.'PREV',
+				'next_text' => 'NEXT'.'<img src="'.$temp_dir.'/images/ico_arrow_next.png">'
 			));
 		endif;
 
