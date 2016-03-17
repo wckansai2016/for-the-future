@@ -10,7 +10,7 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'for-the-future' ),
+			'global_nav' => esc_html__( 'global navigation', 'for-the-future' ),
 		) );
 
 		add_theme_support( 'html5', array(
@@ -72,11 +72,3 @@ function catch_that_image() {
 	return $first_img;
 }
 
-/**
- * custom menu
- */
-function for_the_future_register_menu() {
-	register_nav_menu('global_nav', __('global navigation', 'for-the-future'));
-}
-
-add_action( 'after_setup_theme', 'for_the_future_register_menu' );

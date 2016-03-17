@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /*
-Theme Name: for-the-future
+Theme Name: For the future
 Theme URI: https://github.com/wckansai2016/for-the-future/
 Author: WordCamp Kansai 2016 Team
 Author URI: https://github.com/wckansai2016/
@@ -9,9 +9,8 @@ Description: 公式テーマを作るよ。
 Version: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: wck2016-sample
+Text Domain: for-the-future
 */
-
 @import "normalize";
 
 /* basic */
@@ -23,6 +22,7 @@ body {
 	margin: 0 auto;
 	padding: 0 50px;
 }
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	height: 1px;
@@ -50,6 +50,7 @@ body {
 		}
 	}
 }
+
 .nav-btn {
 	display: block;
 	width: 45px;
@@ -81,6 +82,7 @@ body {
 		color: #787878;
 	}
 }
+
 #gnav {
 	overflow: auto;
 	position: fixed;
@@ -90,7 +92,7 @@ body {
 	height: 100%;
 	background: #353535;
 	z-index: 9999;
-	transition:0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 	ul {
 		padding: 0;
 		text-align: left;
@@ -138,10 +140,54 @@ body {
 			}
 		}
 	}
+
+	&.nav-open {
+		right: 0;
+	}
+
+	.search-field {
+		margin: 10px auto;
+		width: 95%;
+		border-radius: 8px;
+		background: #222222;
+		border: none;
+		height: 40px;
+		padding: 5px 40px 5px 10px;
+		color: #ffffff;
+		position: relative;
+
+		&:placeholder-shown {
+			color: #222222;
+		}
+		&::-webkit-input-placeholder {
+			color: #222222;
+		}
+		&::-moz-placeholder {
+			color: #222222;
+		}
+		&:-moz-placeholder {
+			color: #222222;
+		}
+		&:-ms-input-placeholder {
+			color: #222222;
+		}
+
+	}
+	.search-form:after {
+		font-family: FontAwesome;
+		color: #353535;
+		content: "\f002";
+		position: absolute;
+		right: calc(2.5% + 10px);
+		top: 20px;
+		font-size: 1.1em;
+	}
+	.search-submit {
+		display: none;
+	}
+
 }
-#gnav.nav-open {
-	right: 0;
-}
+
 .overlay {
 	position: fixed;
 	top: 0;
@@ -151,44 +197,7 @@ body {
 	height: 100%;
 	z-index: 999;
 }
-.search-field {
-	margin: 10px auto;
-	width: 95%;
-	border-radius: 8px;
-	background: #222222;
-	border: none;
-	height: 40px;
-	padding: 5px 40px 5px 10px;
-	color: #ffffff;
-	position: relative;
-}
-.search-field:placeholder-shown {
-	color: #222222;
-}
-.search-field::-webkit-input-placeholder {
-	color: #222222;
-}
-.search-field::-moz-placeholder {
-	color: #222222;
-}
-.search-field:-moz-placeholder {
-	color: #222222;
-}
-.search-field:-ms-input-placeholder {
-	color: #222222;
-}
-.search-form:after {
-	font-family: FontAwesome;
-	color: #353535;
-	content: "\f002";
-	position: absolute;
-	right: calc(2.5% + 10px);
-	top: 20px;
-	font-size: 1.1em;
-}
-.search-submit {
-	display: none;
-}
+
 /* gallery-container */
 .gallery-container article {
 	width: 22.7%;
