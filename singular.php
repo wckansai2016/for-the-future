@@ -8,15 +8,11 @@
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
-				<div class="entry-eyecatch">
-					<?php
-						if( has_post_thumbnail() ) :
-							echo get_the_post_thumbnail( $post->ID, 'full' );
-						else :
-					?>
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png" alt="<?php the_title(); ?>" />
-					<?php endif; ?>
-				</div>
+				<?php if( has_post_thumbnail() ) : ?>
+					<div class="entry-eyecatch">
+						<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+					</div>
+				<?php endif; ?>
 
 				<?php
 					the_title( '<h1 class="entry-title">', '</h1>' );
