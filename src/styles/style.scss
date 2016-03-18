@@ -17,6 +17,7 @@ Text Domain: for-the-future
 @import "base/elements";
 @import "layout/grid";
 @import "modules/entry";
+@import "modules/gnav";
 
 /* clearfix */
 .clearfix {
@@ -91,111 +92,6 @@ Text Domain: for-the-future
 		line-height: 1.0;
 		color: #787878;
 	}
-}
-
-.gnav {
-	overflow: auto;
-	position: fixed;
-	top: 0;
-	right: -25%;
-	width: 25%;
-	height: 100%;
-	background: #353535;
-	z-index: 9999;
-	transition: 0.2s ease-in-out;
-	ul {
-		padding: 0;
-		text-align: left;
-		li {
-			padding: 20px;
-			list-style: none;
-			text-shadow: 1px 1px 4px #616161;
-			a, a:hover, a:visited, a:active {
-				color: #ffffff;
-				text-decoration: none;
-			}
-		}
-	}
-	> ul > li {
-		border-top: #878787 1px solid;
-		&:last-child {
-			border-bottom: #878787 1px solid;
-		}
-		&:before {
-			content: url(images/ico_gnav_l.png);
-			margin-right: 15px;
-		}
-		> ul > li {
-			padding-top: 10px;
-			padding-bottom: 10px;
-			font-size: 0.833em;
-			&:last-child {
-				padding-bottom: 0;
-			}
-			&:before {
-				content: url(images/ico_gnav_m.png);
-				margin-right: 15px;
-			}
-			> ul > li {
-				padding-top: 10px;
-				padding-bottom: 10px;
-				font-size: 1em;
-				&:last-child {
-					padding-bottom: 0;
-				}
-				&:before {
-					content: url(images/ico_gnav_s.png);
-					margin-right: 15px;
-				}
-			}
-		}
-	}
-
-	&.nav-open {
-		right: 0;
-	}
-
-	.search-field {
-		margin: 10px auto;
-		width: 95%;
-		border-radius: 8px;
-		background: #222222;
-		border: none;
-		height: 40px;
-		padding: 5px 40px 5px 10px;
-		color: #ffffff;
-		position: relative;
-
-		&:placeholder-shown {
-			color: #222222;
-		}
-		&::-webkit-input-placeholder {
-			color: #222222;
-		}
-		&::-moz-placeholder {
-			color: #222222;
-		}
-		&:-moz-placeholder {
-			color: #222222;
-		}
-		&:-ms-input-placeholder {
-			color: #222222;
-		}
-
-	}
-	.search-form:after {
-		font-family: FontAwesome;
-		color: $body-color;
-		content: "\f002";
-		position: absolute;
-		right: calc(2.5% + 10px);
-		top: 20px;
-		font-size: 1.1em;
-	}
-	.search-submit {
-		display: none;
-	}
-
 }
 
 .overlay {
