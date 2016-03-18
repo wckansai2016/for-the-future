@@ -12,15 +12,24 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: for-the-future
 */
 @import "normalize";
+@import "variables";
+
+/* clearfix */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* basic */
 body {
 	font-family: 'Noto Sans', 'Noto Sans Japanese', sans-serif;
 	font-size: 18px;
-	color: #353535;
-	width: 1200px;
+	color: $body-color;
 	margin: 0 auto;
-	padding: 0 50px;
 }
 
 .screen-reader-text {
@@ -39,11 +48,14 @@ body {
 	text-align: center;
 	align-items: center;
 	position: relative;
+	width: $content-pc-width;
+	margin: 0 auto;
+	padding: 0 50px;
 	h1.logo {
 		margin: 0 auto;
 		font-size: 1.722em;
 		a, a:hover, a:visited, a:active {
-			font-family: 'Noto Serif', serif;
+			font-family: 'Noto Serif', 'Noto Serif Japanese', serif;
 			font-weight: 700;
 			text-decoration: none;
 			color: #353535;
@@ -58,7 +70,7 @@ body {
 	text-align: center;
 	position: absolute;
 	top: 44px;
-	right: 0;
+	right: 50px;
 	margin: 0;
 	border: none;
 	background: none;
@@ -83,7 +95,7 @@ body {
 	}
 }
 
-#gnav {
+.gnav {
 	overflow: auto;
 	position: fixed;
 	top: 0;
@@ -175,7 +187,7 @@ body {
 	}
 	.search-form:after {
 		font-family: FontAwesome;
-		color: #353535;
+		color: $body-color;
 		content: "\f002";
 		position: absolute;
 		right: calc(2.5% + 10px);
@@ -199,28 +211,34 @@ body {
 }
 
 /* gallery-container */
-.gallery-container article {
-	width: 22.7%;
-	overflow: hidden;
-	margin-bottom: 3.06%;
-	padding-top: 11.35%;
-	padding-bottom: 11.35%;
-	height: 1px;
-	float: left;
-	margin-right: 3.06%;
-	&:nth-child(4n) {
-		margin-right: 0;
-	}
-	.img-center {
-		height: 100%;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		img {
-			min-height: 100%;
-			min-width: 100%;
-			display: block;
+.gallery-container {
+	width: $content-pc-width;
+	margin: 0 auto;
+	article {
+		width: 22.7%;
+		overflow: hidden;
+		margin-bottom: 3.06%;
+		padding-top: 11.35%;
+		padding-bottom: 11.35%;
+		height: 1px;
+		float: left;
+		margin-right: 3.06%;
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+		.img-center {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				min-height: 100%;
+				min-width: 100%;
+				display: block;
+			}
 		}
 	}
 }
+
+@import "entry";
