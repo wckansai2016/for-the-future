@@ -32,7 +32,7 @@
 						<?php if ( has_tag() ) : ?>
 							<dl class="entry-tag">
 								<dt><i class="fa fa-tags" aria-label="tag"></i></dt>
-								<dd><?php the_tags(', '); ?></dd>
+								<dd><?php the_tags(''); ?></dd>
 							</dl>
 						<?php endif; ?>
 					</div>
