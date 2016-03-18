@@ -11,8 +11,12 @@ License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: for-the-future
 */
-@import "normalize";
+
 @import "variables";
+@import "base/normalize";
+@import "base/elements";
+@import "layout/grid";
+@import "modules/entry";
 
 /* clearfix */
 .clearfix {
@@ -25,12 +29,6 @@ Text Domain: for-the-future
 }
 
 /* basic */
-body {
-	font-family: 'Noto Sans', 'Noto Sans Japanese', sans-serif;
-	font-size: 18px;
-	color: $body-color;
-	margin: 0 auto;
-}
 
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -241,4 +239,4 @@ body {
 	}
 }
 
-@import "entry";
+
