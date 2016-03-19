@@ -4,7 +4,7 @@
 	<div>
 		<div class="l-grid">
 			<?php if( have_posts() ): while( have_posts() ): the_post(); ?>
-				<div class="l-grid-col l-grid-col--1-4">
+				<div class="l-grid-col l-grid-col--1-2 l-grid-col--large-1-4">
 					<article <?php post_class(); ?> style="overflow: hidden">
 
 						<div class="img-center">

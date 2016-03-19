@@ -12,22 +12,25 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<header class="site-head">
-		<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
-		<button type="button" class="nav-btn">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span class="menu">MENU</span>
-		</button>
-		<nav class="gnav">
-			<?php get_search_form(); ?>
-			<?php wp_nav_menu( array(
-				'theme_location' => 'global_nav',
-				'container' => '',
-				'menu_class' => '',
-				'depth' => 3,
-				'items_wrap' => '<ul>%3$s</ul>'));
-			?>
-		</nav>
-	</header>
+	<div class="l-container">
+		<header class="site-head">
+			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
+			<button type="button" class="nav-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span class="menu">MENU</span>
+			</button>
+			<nav class="gnav">
+				<?php get_search_form(); ?>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'global_nav',
+					'container' => '',
+					'menu_class' => '',
+					'depth' => 3,
+					'items_wrap' => '<ul>%3$s</ul>'));
+				?>
+			</nav>
+		</header>
+
+	</div>
