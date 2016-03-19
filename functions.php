@@ -47,5 +47,3 @@ function for_the_future_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'for_the_future_scripts' );
-
-?>
