@@ -21,7 +21,6 @@
 		text-align: center;
 		color: $body-color;
 		font-size: 40px;
-		width: $content-pc-width;
 		margin: 40px auto;
 	}
 	.entry-meta {
@@ -54,7 +53,6 @@
 
 .entry-content,
 .entry-comments {
-	width: $content-pc-width;
 	margin: 0 auto;
 }
 

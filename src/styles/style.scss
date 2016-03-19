@@ -15,7 +15,7 @@ Text Domain: for-the-future
 @import "variables";
 @import "base/normalize";
 @import "base/elements";
-@import "layout/grid";
+@import "layout/*";
 @import "modules/*";
 
 
@@ -85,8 +85,3 @@ Text Domain: for-the-future
 
 
 @import "modules/img-center";
-
-.l-container {
-	max-width: $content-pc-width;
-	margin: auto;
-}
