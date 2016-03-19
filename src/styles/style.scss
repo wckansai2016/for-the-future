@@ -41,3 +41,52 @@ Text Domain: for-the-future
 }
 
 
+.nav-btn {
+	display: block;
+	width: 45px;
+	cursor: pointer;
+	text-align: center;
+	position: absolute;
+	top: 44px;
+	right: 50px;
+	margin: 0;
+	border: none;
+	background: none;
+	outline: none;
+	span {
+		display: block;
+		margin: 0 auto 5px;
+		height: 3px;
+		width: 26px;
+		background: #787878;
+		&:nth-of-type(3) {
+			margin-bottom: 0;
+		}
+	}
+	span.menu {
+		display: inline;
+		font-size: 0.667em;
+		background: none;
+		margin-bottom: 0;
+		line-height: 1.0;
+		color: #787878;
+	}
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+
+
+@import "modules/img-center";
+
+.l-container {
+	max-width: $content-pc-width;
+	margin: auto;
+}
