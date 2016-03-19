@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 /* entry */
 .singular-body {
@@ -62,66 +62,73 @@
 		height: auto;
 	}
 	.aligncenter {
-	  display: block;
-	  margin: 0 auto;
+		display: block;
+		margin: 0 auto;
 	}
 	.alignright {
-	  float: right;
-	  margin-left: 1em;
+		float: right;
+		margin-left: 1em;
 	}
 	.alignleft {
-	  float: left;
-	  margin-right: 1em;
+		float: left;
+		margin-right: 1em;
 	}
 	.wp-caption {
-	  margin-bottom: 1em;
+		margin-bottom: 1em;
+		font-size: 90%;
 	}
 	.wp-caption-text {
-	  color: #ccc;
+		color: #ccc;
+		font-size: 90%;
+	}
+	.sticky,
+	.gallery-caption,
+	.bypostauthor {
+		display: block;
 	}
 	blockquote {
-	  display: block;
+		display: block;
 	}
 	table {
-	  width: 100%;
+		width: 100%;
 	}
 	dl {
-	  width: 100%;
+		width: 100%;
 	}
 	p {
-	  margin-bottom: 1em;
+		margin-bottom: 1em;
 	}
 	ul li {
-	  list-style-type: square;
+		list-style-type: square;
 	}
 	ol li {
-	  list-style-type: decimal;
+		list-style-type: decimal;
 	}
 	em {
-	  font-style: italic;
+		font-style: italic;
 	}
 	strong {
-	  font-weight: 700;
+		font-weight: 700;
 	}
 	h1 {
-	  font-size: 22px;
+		font-size: 22px;
 	}
 	h2 {
-	  font-size: 20px;
+		font-size: 20px;
 	}
 	h3 {
-	  font-size: 18px;
-	  font-weight: 700;
+		font-size: 18px;
+		font-weight: 700;
 	}
 	h4 {
-	  font-size: 18px;
+		font-size: 18px;
 	}
 	h5 {
-	  font-size: 16px;
-	  font-weight: 700;
+		font-size: 16px;
+		font-weight: 700;
 	}
 	h6 {
-	  font-size: 16px;
+		font-size: 16px;
 	}
 }
 
