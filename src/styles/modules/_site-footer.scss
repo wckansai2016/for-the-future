@@ -1,0 +1,36 @@
+.site-footer {
+	width: 100%;
+	background: #b0b0b0;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	height: 13em;
+	text-align: center;
+	.logo {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	a, a:hover, a:visited, a:active {
+		font-family: 'Noto Serif', 'Noto Serif Japanese', serif;
+		font-weight: 700;
+		text-decoration: none;
+		color: #ffffff;
+	}
+	.sns-icon {
+		display: inline-block;
+		padding: 0;
+		margin: 0 0 20px 0;
+		li {
+			font-size: 1.8em;
+			list-style: none;
+			float: left;
+			margin-right: 1.5em;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.copyright {
+		font-size: 0.8em;
+	}
+}

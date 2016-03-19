@@ -26,6 +26,7 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'for_the_future_setup' );
@@ -47,3 +48,54 @@ function for_the_future_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'for_the_future_scripts' );
+
+/**
+ * widgets for footer sns icon
+ */
+function for_the_future_widgets_twitter() {
+	register_sidebar( array(
+		'name' => 'Footer : Twitter URL',
+		'id' => 'footer_tw',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'for_the_future_widgets_twitter' );
+
+function for_the_future_widgets_facebook() {
+	register_sidebar( array(
+		'name' => 'Footer : Facebook URL',
+		'id' => 'footer_fb',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'for_the_future_widgets_facebook' );
+
+function for_the_future_widgets_googleplus() {
+	register_sidebar( array(
+		'name' => 'Footer : Google+ URL',
+		'id' => 'footer_gp',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'for_the_future_widgets_googleplus' );
+
+function for_the_future_widgets_pinterest() {
+	register_sidebar( array(
+		'name' => 'Footer : Pinterest URL',
+		'id' => 'footer_pin',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+}
+add_action( 'widgets_init', 'for_the_future_widgets_pinterest' );
