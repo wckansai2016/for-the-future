@@ -6,6 +6,7 @@
 }
 
 .entry-header {
+	margin-bottom: 40px;
 	.entry-eyecatch {
 		height: 400px;
 		overflow: hidden;
@@ -25,25 +26,21 @@
 		margin: 40px auto;
 	}
 	.entry-meta {
-		width: 425px;
+		max-width: 40%;
 		margin: 0 auto;
 		time {
 			display: block;
 			text-align: center;
 		}
-		dl {
-			margin: 0;
+		.entry-category,
+		.entry-tag {
 			font-size: 90%;
-		}
-		dt {
-			float: left;
-			width: 30px;
-		}
-		dd {
-			float: left;
-			width: 395px;
 			text-align: center;
-			margin: 0;
+			margin-top: 0;
+			margin-bottom: 0;
+			i {
+				margin-right: 10px;
+			}
 			a, a:hover, a:visited, a:active {
 				color: $single-body-color;
 				text-decoration: none;
