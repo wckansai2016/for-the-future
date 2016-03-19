@@ -1850,7 +1850,7 @@ form input[type="submit"]:hover,
   height: 100%;
   z-index: 999; }
 .nav-links {
-  margin-top: 30px; }
+  margin-top: 80px; }
 .nav-links a, .nav-links a:hover, .nav-links a:visited, .nav-links a:active {
     color: #575757;
     text-decoration: none; }
