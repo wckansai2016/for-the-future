@@ -24,9 +24,13 @@
 	.entry-meta {
 		width: 425px;
 		margin: 0 auto;
+		font-size: 90%;
 		time {
 			display: block;
 			text-align: center;
+		}
+		dl {
+			margin: 0;
 		}
 		dt {
 			float: left;
@@ -129,22 +133,5 @@
 	}
 	h6 {
 		font-size: 16px;
-	}
-}
-
-.nav-links {
-	a, a:hover, a:visited, a:active {
-		color: #575757;
-		text-decoration: none;
-	}
-	.nav-previous {
-		img {
-			margin-right: 10px;
-		}
-	}
-	.nav-next {
-		img {
-			margin-left: 10px;
-		}
 	}
 }
