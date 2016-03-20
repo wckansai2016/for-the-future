@@ -6,6 +6,21 @@
 	bottom: 0;
 	height: 13em;
 	text-align: center;
+
+	.to-top {
+		right: 10px;
+		bottom: 10px;
+		text-align: center;
+		position: fixed;
+		z-index: 9999;
+	}
+	.to-top:hover {
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+		opacity: 0.7;
+	}
+
 	.logo {
 		margin-top: 40px;
 		margin-bottom: 20px;

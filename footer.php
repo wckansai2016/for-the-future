@@ -1,6 +1,11 @@
 <footer class="site-footer">
 
+	<div class="to-top">
+		<a href="#pagetop"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/btn_totop.png" alt="to Top" /></a>
+	</div>
+
 	<div class="l-container">
+
 		<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
 		<?php if ( has_nav_menu( 'footer_nav' ) ) :
 			wp_nav_menu( array(
