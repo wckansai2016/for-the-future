@@ -30,6 +30,26 @@
 				</div>
 
 			<?php endwhile; endif; ?>
+
+		</div><!-- /.l-grid -->
+
+		<div class="l-grid">
+			<div class="index-nav-links-wrapper">
+				<div class="nav-links index-nav-links">
+				<?php
+					$temp_dir = esc_url( get_template_directory_uri() );
+					$args = array(
+						'show_all'           => False,
+						'end_size'           => 1,
+						'mid_size'           => 1,
+						'prev_next'          => True,
+						'prev_text'          => '<img src="'.$temp_dir.'/images/ico_arrow_prev.png">'.'PREV',
+						'next_text'          => 'NEXT'.'<img src="'.$temp_dir.'/images/ico_arrow_next.png">'
+					);
+					echo paginate_links( $args );
+				?>
+				</div>
+			</div>
 		</div>
 
 	</div>
