@@ -47,3 +47,19 @@ function for_the_future_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'for_the_future_scripts' );
+
+
+/**
+ * Make custom post thumbnail for singular
+ *
+**/
+
+if ( ! function_exists( 'for_the_future_get_post_eyecatch' ) ) :
+
+	function for_the_future_get_post_eyecatch(){
+		$image_data = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+		$html = "<div class='entry-eyecatch' style=\"background-image:url('{$image_data[0]}');\" alt='main image'></div>";
+		return $html;
+	}
+
+endif;
