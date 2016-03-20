@@ -16,20 +16,121 @@
 		text-decoration: none;
 		color: #ffffff;
 	}
+
 	.sns-icon {
 		display: inline-block;
 		padding: 0;
 		margin: 0 0 20px 0;
 		li {
-			font-size: 1.8em;
 			list-style: none;
 			float: left;
 			margin-right: 1.5em;
 			&:last-child {
 				margin-right: 0;
 			}
+			a {
+				color: #fff;
+				display: block;
+				width: 2em;
+				height: 2em;
+				overflow: hidden;
+				text-decoration: none;
+
+				&:before {
+					content: '\f13d';
+					display: inline-block;
+					font-family: 'FontAwesome';
+					font-size: 1.8em;
+					-webkit-font-smoothing: antialiased;
+				}
+			}
+
+			a[href*="wordpress.org"]:before {
+				content: '\f19a';
+			}
+
+			a[href*="github.com"]:before {
+				content: '\f09b';
+			}
+
+			a[href*="dribbble.com"]:before {
+				content: '\f17d';
+			}
+
+			a[href*="twitter.com"]:before {
+				content: '\f099';
+			}
+
+			a[href*="facebook.com"]:before {
+				content: '\f09a';
+			}
+
+			a[href*="plus.google.com"]:before {
+				content: '\f0d5';
+			}
+
+			a[href*="linkedin.com"]:before {
+				content: '\f0e1';
+			}
+
+			a[href*="pinterest.com"]:before {
+				content: '\f231';
+			}
+
+			a[href*="flickr.com"]:before {
+				content: '\f16e';
+			}
+
+			a[href*="vimeo.com"]:before {
+				content: '\f27d';
+			}
+
+			a[href*="youtube.com"]:before {
+				content: '\f167';
+			}
+
+			a[href*="instagram.com"]:before {
+				content: '\f16d';
+			}
+
+			a[href*="codepen.io"]:before {
+				content: '\f1cb';
+			}
+
+			a[href*="skype.com"]:before {
+				content: '\f17e';
+			}
+
+			a[href*="digg.com"]:before {
+				content: '\f1a6';
+			}
+
+			a[href*="reddit.com"]:before {
+				content: '\f1a1';
+			}
+
+			a[href*="stumbleupon.com"]:before {
+				content: '\f1a4';
+			}
+
+			a[href*="getpocket.com"]:before {
+				content: '\f265';
+			}
+
+			a[href*="dropbox.com"]:before {
+				content: '\f16b';
+			}
+
+			a[href*="foursquare.com"]:before {
+				content: '\f180';
+			}
+
+			a[href$="/feed"]:before {
+				content: '\f09e';
+			}
 		}
 	}
+
 	.copyright {
 		font-size: 0.8em;
 	}

@@ -8,9 +8,13 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-		// This theme uses wp_nav_menu() in one location.
+		// global navigation
 		register_nav_menus( array(
 			'global_nav' => esc_html__( 'global navigation', 'for-the-future' ),
+		) );
+		// footer menu for sns etc.
+		register_nav_menus( array(
+			'footer_nav' => esc_html__( 'footer menu for SNS etc.', 'for-the-future' ),
 		) );
 
 		add_theme_support( 'html5', array(
@@ -48,54 +52,3 @@ function for_the_future_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'for_the_future_scripts' );
-
-/**
- * widgets for footer sns icon
- */
-function for_the_future_widgets_twitter() {
-	register_sidebar( array(
-		'name' => 'Footer : Twitter URL',
-		'id' => 'footer_tw',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '',
-	) );
-}
-add_action( 'widgets_init', 'for_the_future_widgets_twitter' );
-
-function for_the_future_widgets_facebook() {
-	register_sidebar( array(
-		'name' => 'Footer : Facebook URL',
-		'id' => 'footer_fb',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '',
-	) );
-}
-add_action( 'widgets_init', 'for_the_future_widgets_facebook' );
-
-function for_the_future_widgets_googleplus() {
-	register_sidebar( array(
-		'name' => 'Footer : Google+ URL',
-		'id' => 'footer_gp',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '',
-	) );
-}
-add_action( 'widgets_init', 'for_the_future_widgets_googleplus' );
-
-function for_the_future_widgets_pinterest() {
-	register_sidebar( array(
-		'name' => 'Footer : Pinterest URL',
-		'id' => 'footer_pin',
-		'before_widget' => '',
-		'after_widget' => '',
-		'before_title' => '',
-		'after_title' => '',
-	) );
-}
-add_action( 'widgets_init', 'for_the_future_widgets_pinterest' );
