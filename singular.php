@@ -9,9 +9,7 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 					<?php if( has_post_thumbnail() ) : ?>
-						<div class="entry-eyecatch">
-							<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
-						</div>
+						<div class="entry-eyecatch" style="background-image:url('<?php echo wp_get_attachment_image_src(get_post_thumbnail_id(), 'full')[0]; ?>');"></div>
 					<?php endif; ?>
 
 					<div class="l-container">
