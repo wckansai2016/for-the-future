@@ -8,12 +8,9 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-		// global navigation
+		//  navigations
 		register_nav_menus( array(
 			'global_nav' => esc_html__( 'global navigation', 'for-the-future' ),
-		) );
-		// footer menu for sns etc.
-		register_nav_menus( array(
 			'footer_nav' => esc_html__( 'footer menu for SNS etc.', 'for-the-future' ),
 		) );
 
