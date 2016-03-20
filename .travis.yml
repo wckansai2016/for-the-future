@@ -2,6 +2,7 @@ language: php
 sudo: false
 php:
 - '5.3'
+- '7'
 env:
   global:
   - GIT_COMMITTER_NAME=travis-ci
