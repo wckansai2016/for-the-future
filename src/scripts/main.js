@@ -3,15 +3,13 @@ import $ from 'jquery';
 $(function() {
 
 	// hamburger menu
-	$('.site-head').prepend('<div class="overlay"></div>');
-
 	$('.nav-btn').click(function() {
-		$('.overlay').toggle();
+		$('.site-head .overlay').toggle();
 		$('.gnav').toggleClass('nav-open');
 	});
 
-	$('.overlay').click(function() {
-		$('.overlay').toggle();
+	$('.site-head .overlay').click(function() {
+		$('.site-head .overlay').toggle();
 		$('.gnav').removeClass('nav-open');
 	});
 
