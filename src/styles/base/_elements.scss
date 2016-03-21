@@ -5,6 +5,9 @@ body {
 	font-size: 18px;
 	color: $body-color;
 	margin: 0 auto;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 13em;
 }
 
 /*
