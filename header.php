@@ -33,8 +33,8 @@
 				<?php get_search_form(); ?>
 				<?php wp_nav_menu( array(
 					'theme_location' => 'global_nav',
-					'container'      => '',
-					'menu_class'     => '',
+					'container'      => 'div',
+					'menu_class'     => 'drawer-menu',
 					'depth'          => 3,
 					'items_wrap'     => '<ul>%3$s</ul>',
 				) );
