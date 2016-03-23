@@ -1,8 +1,7 @@
-### Fix or Enhancement?
+### 変更点
 
 
+### 関連するissue
+
+---
 - [ ] All tests passed
-
-### Environment
-- OS: Write here
-- npm version: Write here
