@@ -1,28 +1,34 @@
 import $ from 'jquery';
 
-$(function() {
-
+$( _=> {
+	const $overlay = $( '.site-head' ).find( '.overlay' );
+	const $gnav = $( '[data-gnav]' );
 	// hamburger menu
-	$('.nav-btn').click(function() {
-		$('.site-head .overlay').toggle();
-		$('.gnav').toggleClass('nav-open');
-	});
+	$( '.nav-btn' ).click( _=> {
+		$overlay.toggle();
+		$gnav.toggleClass( 'nav-open' );
+	} );
+	$overlay.click( _=> {
+		$overlay.toggle();
+		$gnav.removeClass( 'nav-open' );
+	} );
 
-	$('.site-head .overlay').click(function() {
-		$('.site-head .overlay').toggle();
-		$('.gnav').removeClass('nav-open');
-	});
+	// to top button
+	const show_btn = 100;
+	const $to_top = $( '.site-footer .to-top' );
+	const $window = $( window );
+	$to_top.hide();
+	$to_top.on( 'click', evt=> {
+		evt.preventDefault();
+		$( 'html,body' ).animate( { scrollTop: 0 }, 500 );
+	} );
 
-	// entry-eyecatch
-	var view_width = $(window).width;
-	var image_width = $('.entry-eyecatch img').width();
-	var image_height;
-	$('.entry-eyecatch img').bind('load', function() {
-    image_height = $(this).height();
-  });
-	//var image_height = $('.entry-eyecatch img').height();
-	var trim_height = parseInt(image_width/image_height*view_width-400)/2;
-	//alert(image_height);
-	//$('.entry-eyecatch img').css('top':'-'+trim_height+'px');
+	$window.on( 'load scroll resize', _=> {
+		if( $window.scrollTop() >= show_btn ) {
+			$to_top.fadeIn( 'normal' );
+		} else if( $window.scrollTop() < show_btn ) {
+			$to_top.fadeOut( 'normal' );
+		}
+	} );
 
-});
+} );
