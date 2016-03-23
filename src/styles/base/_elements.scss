@@ -3,6 +3,9 @@
 body {
 	font-family: 'Noto Sans', 'Noto Sans Japanese', sans-serif;
 	font-size: 18px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	color: $body-color;
 	margin: 0 auto;
 	min-height: 100vh;
