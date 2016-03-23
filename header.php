@@ -18,7 +18,7 @@
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 			<?php
 				$options = get_option('for_the_future_theme_options');
-				if (isset($options['head_logo']) && $options['head_logo']) :
+				if ( ! empty( $options['head_logo'] ) ) :
 					print '<img src="'.$options['head_logo'].'" alt="'.get_bloginfo('name').'" />';
 				else :
 					echo bloginfo( 'name' );
