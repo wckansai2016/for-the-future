@@ -26,9 +26,7 @@
 			?>
 			</a></h1>
 			<button type="button" class="nav-btn">
-				<span></span>
-				<span></span>
-				<span></span>
+				<div class="nav-btn-line"></div>
 				<span class="menu">MENU</span>
 			</button>
 			<nav class="gnav" data-gnav>
