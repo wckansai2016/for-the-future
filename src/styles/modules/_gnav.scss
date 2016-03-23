@@ -36,9 +36,12 @@
 				border-bottom: #878787 1px solid;
 			}
 			a:before {
-				content: url(images/ico_gnav_l.png);
+				content: '\f105';
 				margin-left: -20px;
 				position: absolute;
+				color: #909090;
+				font-family: 'FontAwesome';
+				margin-top: 5px;
 			}
 			.children, .sub-menu {
 				> li {
@@ -46,14 +49,16 @@
 					&:last-child {
 						padding-bottom: 0;
 					}
-					a:before {
-						content: url(images/ico_gnav_m.png);
+					> a:before {
+						content: '\f0da';
 					}
-					.childrn, .sub-menu {
+					.children, .sub-menu {
 						> li {
 							font-size: 1em;
-							a:before {
-								content: url(images/ico_gnav_s.png);
+							> a:before {
+								content: '\f111';
+								font-size: 10px;
+								margin-top: 6px;
 							}
 						}
 					}
