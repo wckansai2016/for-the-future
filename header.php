@@ -15,7 +15,16 @@
 	<div class="l-container">
 		<header id="pagetop" class="site-head">
 			<div class="overlay"></div>
-			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
+			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<?php
+				$options = get_option('for_the_future_theme_options');
+				if (isset($options['head_logo']) && $options['head_logo']) :
+					print '<img src="'.$options['head_logo'].'" alt="'.get_bloginfo('name').'" />';
+				else :
+					echo bloginfo( 'name' );
+				endif;
+			?>
+			</a></h1>
 			<button type="button" class="nav-btn">
 				<span></span>
 				<span></span>

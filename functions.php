@@ -32,6 +32,61 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'for_the_future_setup' );
 
+/**
+ * customizer
+ */
+
+function for_the_future_customize_register($wp_customize) {
+
+	$wp_customize->add_section( 'for_the_future_design', array(
+      'title'          => _x('Design settings', 'for-the-future theme-customizer', 'for-the-future'),
+      'priority'       => 500,
+  ) );
+
+	// header logo
+	$wp_customize->add_setting( 'for_the_future_theme_options[head_logo]', array(
+			'default'			=> '',
+			'type'				=> 'option',
+			'capability'		=> 'edit_theme_options',
+			'sanitize_callback' => 'esc_url_raw',
+  ) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+		$wp_customize,
+		'head_logo',
+		array(
+			'label'     => _x('Header logo image', 'for-the-future theme-customizer', 'for-the-future'),
+			'section'   => 'for_the_future_design',
+			'settings'  => 'for_the_future_theme_options[head_logo]',
+			'priority'  => 501,
+		)
+	) );
+
+	// footer logo
+	$wp_customize->add_setting( 'for_the_future_theme_options[foot_logo]', array(
+			'default'			=> '',
+			'type'				=> 'option',
+			'capability'		=> 'edit_theme_options',
+			'sanitize_callback' => 'esc_url_raw',
+  ) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control(
+		$wp_customize,
+		'foot_logo',
+		array(
+			'label'     => _x('Footer logo image', 'for-the-future theme-customizer', 'for-the-future'),
+			'section'   => 'for_the_future_design',
+			'settings'  => 'for_the_future_theme_options[foot_logo]',
+			'priority'  => 501,
+		)
+	) );
+
+}
+
+add_action( 'customize_register', 'for_the_future_customize_register' );
+
+
+
 function for_the_future_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'for_the_future_content_width', 640 );
 }
