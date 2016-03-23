@@ -1,0 +1,46 @@
+.error-404 {
+	background: url(images/bg_404.png) no-repeat center center;
+	min-height: 455px;
+	h1, h2, p, form {
+		text-align: center;
+		width: 100%;
+	}
+	.error-title {
+		font-size: 100px;
+		font-weight: bold;
+		padding-top: 80px;
+		margin-bottom: 0;
+		height: 120px;
+	}
+	.error-content {
+		margin: 0;
+	}
+	.error-attention {
+		margin: 0;
+	}
+	.search-field {
+		display: inline-block;
+		margin-top: 20px;
+		width: 33%;
+		height: 40px;
+		padding: 0 10px;
+		position: relative;
+	}
+	.search-form label{
+		position: relative;
+		&:after {
+			content: "\f002";
+			font-family: FontAwesome;
+			color: #b0b0b0;
+			position: absolute;
+			right: 13px;
+			top: 4px;
+		}
+	}
+	.search-submit {
+		display: none;
+	}
+	.link-home {
+		margin-top: 10px;
+	}
+}
