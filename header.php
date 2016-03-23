@@ -17,9 +17,7 @@
 			<div class="overlay"></div>
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
 			<button type="button" class="nav-btn">
-				<span></span>
-				<span></span>
-				<span></span>
+				<div class="nav-btn-line"></div>
 				<span class="menu">MENU</span>
 			</button>
 			<nav class="gnav" data-gnav>
