@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 $( _=> {
 	const $overlay = $( '.site-head' ).find( '.overlay' );
-	const $gnav = $( '.gnav' );
+	const $gnav = $( '[data-gnav]' );
 	// hamburger menu
 	$( '.nav-btn' ).click( _=> {
 		$overlay.toggle();
