@@ -13,7 +13,7 @@
 </head>
 <body <?php body_class(); ?>>
 	<div class="l-container">
-		<header class="site-head">
+		<header id="pagetop" class="site-head">
 			<div class="overlay"></div>
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1><!-- ロゴが登録されていたらロゴ画像、されてなければブログ名 -->
 			<button type="button" class="nav-btn">
