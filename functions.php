@@ -8,9 +8,10 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
-		// This theme uses wp_nav_menu() in one location.
+		//  navigations
 		register_nav_menus( array(
 			'global_nav' => esc_html__( 'global navigation', 'for-the-future' ),
+			'footer_nav' => esc_html__( 'footer menu for SNS etc.', 'for-the-future' ),
 		) );
 
 		add_theme_support( 'html5', array(
@@ -26,6 +27,7 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'for_the_future_setup' );
