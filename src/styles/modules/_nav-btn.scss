@@ -17,7 +17,7 @@
 		top: 0;
 		left: 12px;
 
-		, &:before, &:after{
+		&, &:before, &:after{
 			display: block;
 			margin: 0;
 			height: 3px;
@@ -36,11 +36,8 @@
 			left: 0;
 			bottom: -8px;
 		}
-
-		&:nth-of-type(3) {
-			margin-bottom: 0;
-		}
 	}
+
 	span.menu {
 		display: inline;
 		font-size: 0.667em;
