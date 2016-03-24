@@ -95,7 +95,7 @@ add_action( 'customize_register', 'for_the_future_customize_register' );
  * setup content width.
  */
 function for_the_future_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'for_the_future_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'for_the_future_content_width', 1200 );
 }
 
 add_action( 'after_setup_theme', 'for_the_future_content_width', 0 );
