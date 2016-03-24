@@ -12,16 +12,14 @@ import runSequence from 'run-sequence';
 gulp.task('copy', function() {
 	return gulp.src(
 			[
-				'./**/*.php',
-				'./**/*.css',
-				'./font-awesome/**',
-				'./bundle.js',
-				'./src/**',
-				'./readme.txt',
-				'./LICENSE',
+				'./**/*.*',
+				"!./.github/**",
 				"!./dist/**",
 				"!./bin/**",
 				"!./gulp/**",
+				"!./gulpconfig.js",
+				"!./gulpconfig.js.sample",
+				"!./gulpfile.babel.js",
 				"!.travis.yml",
 				"!.gitignore",
 				"!.editorconfig",
