@@ -14,6 +14,7 @@ gulp.task('copy', function() {
 			[
 				'./**/*.php',
 				'./**/*.css',
+				'./font-awesome/**',
 				'./bundle.js',
 				'./src/**',
 				'./readme.txt',
