@@ -28,6 +28,10 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+
+		set_post_thumbnail_size( 475, 475, true);
+		add_image_size('post-thumbnail-2x', 950, 950, true);
+
 	}
 endif;
 add_action( 'after_setup_theme', 'for_the_future_setup' );
