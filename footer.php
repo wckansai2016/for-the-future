@@ -1,7 +1,7 @@
 <footer class="site-footer">
 
 	<div class="to-top">
-		<a href="#pagetop"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/btn_totop.png" alt="to Top" /></a>
+		<a href="#pagetop"><i class="fa fa-chevron-up"></i></a>
 	</div>
 
 	<div class="l-container">
