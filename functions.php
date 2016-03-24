@@ -102,6 +102,10 @@ add_action( 'after_setup_theme', 'for_the_future_content_width', 0 );
 function for_the_future_scripts() {
 	$theme         = wp_get_theme();
 	$theme_version = $theme->get( 'Version' );
+
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', array(), '4.5.0' );
+	wp_enqueue_style( 'noto-sans', '//fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700');
+	wp_enqueue_style( 'noto-sans-japanese', '//fonts.googleapis.com/earlyaccess/notosansjapanese.css' );
 	wp_enqueue_style( 'for-the-future-style', get_stylesheet_uri(), array(), $theme_version );
 	wp_enqueue_script( 'for-the-future-script', get_template_directory_uri() . '/bundle.js', array( 'jquery' ), $theme_version, true );
 }
