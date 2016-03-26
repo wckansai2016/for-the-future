@@ -133,6 +133,8 @@ form {
 		border: $body-color 2px solid;
 		text-align: center;
 		padding: 10px 20px;
+
+		transition: all 0.4s;
 		&:hover {
 			background: $body-color;
 			border: $body-color 2px solid;

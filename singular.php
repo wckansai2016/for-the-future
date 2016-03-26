@@ -39,6 +39,12 @@
 					<section class="entry-content">
 						<?php the_content(); ?>
 					</section>
+
+					<?php
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
+					?>
 				</div>
 
 			</article>
