@@ -1,0 +1,134 @@
+/* comments */
+
+.comments-area {
+	width: 900px;
+	margin: 0 auto;
+	color: #222222;
+	color: $single-body-color;
+
+	.comment-form-comment, .comment-form-author, .comment-form-email, .comment-form-url {
+		label {
+			display: block;
+			margin-bottom: 8px;
+		}
+	}
+
+	.comments-title {
+		text-align: center;
+		color: $body-color;
+		font-size: 40px;
+		margin: 40px auto;
+	}
+
+	.comment-list {
+		padding: 0;
+		list-style: none;
+
+		.comment {
+			margin-top: 20px;
+
+			.comment-awaiting-moderation {
+				margin: 0;
+			}
+
+			.comment-meta {
+				width: calc(100% - 180px);
+				width: -webkit-calc(100% - 180px);
+				position: absolute;
+				padding-left: 180px;
+
+				.avatar {
+					border-radius: 10px;
+					border: solid 1px #b0b0b0;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+
+				.says {
+					display: none;
+				}
+
+				.comment-author, .comment-metadata {
+					display: inline-block;
+					vertical-align: bottom;
+				}
+
+				.comment-author {
+					font-size: 18px;
+					margin-right: 9px;
+				}
+
+				.comment-metadata {
+					font-size: 12px;
+				}
+			}
+
+			.comment-content, .comment-awaiting-moderation, .reply {
+				width: 720px;
+				float: right;
+
+				padding: 25px 0 0;
+				font-size: 14px;
+			}
+
+			.comment-content {
+				font-size: 14px;
+				margin-top: 0;
+
+				p:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.comment-body {
+				position: relative;
+
+				&:after {
+					clear: both;
+					content: "";
+					display: block;
+				}
+			}
+
+		}
+	}
+
+	.comment-form {
+		font-size: 0;
+		& > p {
+			font-size: 1.0rem;
+		}
+
+		.comment-form-comment {
+			margin-bottom: 0;
+
+			textarea {
+				width: calc(100% - 28px);
+				width: -webkit-calc(100% - 28px);
+				height: 176px;
+				padding: 14px;
+			}
+		}
+	}
+
+	.comment-form-author, .comment-form-email {
+		margin-right: 75px;
+	}
+
+	.comment-form-author, .comment-form-email, .comment-form-url {
+		display: inline-block;
+
+		input {
+			width: 235px;
+			height: 40px;
+			margin: 0;
+			padding: 0 0 0 13px;
+			border: solid 1px #b0b0b0;
+		}
+	}
+
+	.form-submit {
+		text-align: center;
+	}
+}
