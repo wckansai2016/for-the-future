@@ -5,10 +5,14 @@
 
 .entry-header {
 	margin-bottom: 40px;
+
 	.entry-eyecatch {
 		height: 400px;
 		overflow: hidden;
 		position: relative;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 		img {
 			min-width: 100%;
 			width: 100%;

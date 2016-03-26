@@ -9,9 +9,7 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 					<?php if( has_post_thumbnail() ) : ?>
-						<div class="entry-eyecatch">
-							<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
-						</div>
+						<?php echo for_the_future_get_post_eyecatch(); ?>
 					<?php endif; ?>
 
 					<div class="l-container">
