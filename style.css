@@ -2149,7 +2149,7 @@ form input[type="button"]:hover {
 	border: none;
 	background: none;
 	outline: none;
-	text-align: center;
+	padding: 2px 0 3px;
 }
 .nav-btn .nav-btn-line {
 	top: 0;
