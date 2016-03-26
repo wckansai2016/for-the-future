@@ -37,7 +37,11 @@ gulp.task('sass', function () {
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(bulkSass())
-		.pipe(sass())
+		.pipe(sass({
+			indentType: 'tab',
+			indentWidth: 1,
+			outputStyle: 'expanded'
+		}))
 		.on('error', handleErrors)
 		.pipe(postcss(processors))
 		.pipe(sourcemaps.write({
