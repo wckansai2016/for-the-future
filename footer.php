@@ -12,7 +12,7 @@
 			if ( ! empty( $options['foot_logo'] ) ) :
 				print '<img src="'.$options['foot_logo'].'" alt="'.get_bloginfo('name').'" />';
 			else :
-				echo bloginfo( 'name' );
+				bloginfo( 'name' );
 			endif;
 		?>
 		</a></h1>

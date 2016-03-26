@@ -17,7 +17,7 @@
 				if ( ! empty( $options['head_logo'] ) ) :
 					print '<img src="'.$options['head_logo'].'" alt="'.get_bloginfo('name').'" />';
 				else :
-					echo bloginfo( 'name' );
+					bloginfo( 'name' );
 				endif;
 			?>
 			</a></h1>
