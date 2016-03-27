@@ -2404,7 +2404,7 @@ img {
 	bottom: 10px;
 	text-align: center;
 	position: fixed;
-	z-index: 9999;
+	z-index: 5000;
 	background: #555555;
 }
 .site-footer .to-top:hover {
