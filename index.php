@@ -2,6 +2,16 @@
 
 <div class="l-container">
 	<div>
+		<?php if( is_search() ) : ?>
+			<h2 class="archive-title"><?php _e( 'Search Result', 'for-the-future' );?> : <?php the_search_query();?></h2>
+		<?php endif;?>
+		<?php if( is_category() ) : ?>
+			<h2 class="archive-title"><?php _e( 'Category', 'for-the-future' );?> : <?php single_cat_title();?></h2>
+		<?php endif;?>
+		<?php if( is_tag() ) : ?>
+			<h2 class="archive-title"><?php _e( 'Tag', 'for-the-future' );?> : <?php single_tag_title();?></h2>
+		<?php endif;?>
+		
 		<div class="l-grid">
 			<?php if( have_posts() ): while( have_posts() ): the_post(); ?>
 				<div class="l-grid-col l-grid-col--1-2 l-grid-col--large-1-4">
