@@ -9,7 +9,7 @@
 		<p class="error-attention"><?php esc_html_e( 'Sorry, but the page you requested cannot be found.', 'for-the-future' ); ?></p>
 		<?php get_search_form(); ?>
 		<p class="link-home">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( '» Back to home', 'for-the-future' ); ?></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( '&raquo; Back to home', 'for-the-future' ); ?></a>
 		</p>
 	</section>
 </div>
