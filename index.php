@@ -13,11 +13,11 @@
 		<?php endif;?>
 		
 		<div class="l-grid">
-			<?php if( have_posts() ): while( have_posts() ): the_post(); ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="l-grid-col l-grid-col--1-2 l-grid-col--large-1-4">
 					<article <?php post_class(); ?>>
 
-						<a  href="<?php the_permalink(); ?>">
+						<a href="<?php the_permalink(); ?>">
 							<?php
 							if( has_post_thumbnail() ) :?>
 								<div class="square-thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>');">
@@ -35,9 +35,6 @@
 						<!--
 	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	-->
-						<!--
-	<?php the_content(); ?>
-	-->
 					</article>
 				</div>
 
@@ -48,9 +45,9 @@
 		<div class="l-grid">
 			<div class="index-nav-links-wrapper">
 				<div class="nav-links index-nav-links">
-				<?php
+					<?php
 					$temp_dir = esc_url( get_template_directory_uri() );
-					$args = array(
+					$args     = array(
 						'show_all'  => false,
 						'end_size'  => 1,
 						'mid_size'  => 1,
@@ -59,7 +56,7 @@
 						'next_text' => 'NEXT <i class="fa fa-angle-right"></i>',
 					);
 					echo paginate_links( $args );
-				?>
+					?>
 				</div>
 			</div>
 		</div>
