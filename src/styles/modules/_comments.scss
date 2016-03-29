@@ -68,10 +68,10 @@
 
 			.comment-content, .comment-awaiting-moderation, .reply {
 				width: 720px;
-				max-width: calc(100vw - 180px);
+				max-width: calc(100vw - 200px);
 				float: right;
 
-				padding: 25px 0 0;
+				padding: 25px 20px 0;
 				font-size: 14px;
 			}
 
