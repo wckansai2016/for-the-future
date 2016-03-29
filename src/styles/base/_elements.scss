@@ -115,13 +115,7 @@ form {
 		&:placeholder-shown {
 			color: #b0b0b0;
 		}
-		&::-webkit-input-placeholder {
-			color: #b0b0b0;
-		}
-		&::-moz-placeholder {
-			color: #b0b0b0;
-		}
-		&:-ms-input-placeholder {
+		&::placeholder {
 			color: #b0b0b0;
 		}
 	}

@@ -85,19 +85,9 @@
 		&:placeholder-shown {
 			color: #222222;
 		}
-		&::-webkit-input-placeholder {
+		&::placeholder {
 			color: #222222;
 		}
-		&::-moz-placeholder {
-			color: #222222;
-		}
-		&:-moz-placeholder {
-			color: #222222;
-		}
-		&:-ms-input-placeholder {
-			color: #222222;
-		}
-
 	}
 	.search-form:after {
 		font-family: FontAwesome;
