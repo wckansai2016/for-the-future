@@ -3,8 +3,6 @@
 body {
 	font-family: 'Noto Sans', 'Noto Sans Japanese', sans-serif;
 	font-size: 18px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: $body-color;
 	margin: 0 auto;
@@ -117,13 +115,7 @@ form {
 		&:placeholder-shown {
 			color: #b0b0b0;
 		}
-		&::-webkit-input-placeholder {
-			color: #b0b0b0;
-		}
-		&::-moz-placeholder {
-			color: #b0b0b0;
-		}
-		&:-ms-input-placeholder {
+		&::placeholder {
 			color: #b0b0b0;
 		}
 	}
