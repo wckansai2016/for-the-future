@@ -5,19 +5,16 @@
 
 .entry-header {
 	width: 900px;
+	margin: 0 auto 40px;
 	max-width: 100vw;
 
-	margin: 0 auto;
-	margin-bottom: 40px;
 	.entry-eyecatch {
-		height: 400px;
-		overflow: hidden;
-		position: relative;
+		font-size: 0;
 		img {
-			min-width: 100%;
-			width: 100%;
+			width: 1020px;
+			margin-left: -60px;
 			height: auto;
-			position: absolute;
+			max-width: 100vw;
 		}
 	}
 	.entry-title {
