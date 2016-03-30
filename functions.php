@@ -28,7 +28,11 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
-
+		add_editor_style( [
+			'editor-style.css',
+			'//fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700',
+		] );
+		
 		set_post_thumbnail_size( 475, 475, true );
 		add_image_size( 'post-thumbnail-2x', 950, 950, true );
 
