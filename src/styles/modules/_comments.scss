@@ -2,6 +2,8 @@
 
 .comments-area {
 	width: 900px;
+	max-width: 100vw;
+
 	margin: 0 auto;
 	color: #222222;
 	color: $single-body-color;
@@ -66,10 +68,15 @@
 
 			.comment-content, .comment-awaiting-moderation, .reply {
 				width: 720px;
+				max-width: calc(100vw - 200px);
 				float: right;
 
-				padding: 25px 0 0;
+				padding: 25px 20px 0;
 				font-size: 14px;
+			}
+
+			.comment-awaiting-moderation{
+				padding-top: 35px;
 			}
 
 			.comment-content {
@@ -97,6 +104,7 @@
 
 	.comment-form {
 		font-size: 0;
+		margin: 0 0 10px 0;
 		& > p {
 			font-size: 1.0rem;
 		}
@@ -107,6 +115,7 @@
 			textarea {
 				width: calc(100% - 28px);
 				width: -webkit-calc(100% - 28px);
+				max-width: calc(100% - 68px);
 				height: 176px;
 				padding: 14px;
 			}
