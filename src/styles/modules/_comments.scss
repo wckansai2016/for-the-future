@@ -35,7 +35,6 @@
 
 			.comment-meta {
 				width: calc(100% - 180px);
-				width: -webkit-calc(100% - 180px);
 				position: absolute;
 				padding-left: 180px;
 
@@ -114,7 +113,6 @@
 
 			textarea {
 				width: calc(100% - 28px);
-				width: -webkit-calc(100% - 28px);
 				max-width: calc(100% - 68px);
 				height: 176px;
 				padding: 14px;
