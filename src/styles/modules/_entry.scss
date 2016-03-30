@@ -10,6 +10,8 @@
 
 	.entry-eyecatch {
 		font-size: 0;
+		max-width: calc(100vw - 120px);
+		margin: 0 auto;
 		img {
 			width: 1020px;
 			margin-left: -60px;
