@@ -30,8 +30,8 @@ $( _=> {
 			$to_top.fadeOut( 'normal' );
 		}
 
-		var scrollHeight = $(document).height();
-		var scrollPosition = $window.height() + $window.scrollTop();
+		const scrollHeight = $(document).height();
+		const scrollPosition = $window.height() + $window.scrollTop();
 		const $footer = $('footer');
 
 		if ( scrollHeight - scrollPosition + 10 <= $footer.height() ) {
