@@ -1,5 +1,9 @@
 /* comments */
 
+.comment > .comment{
+	padding-left: 22px;
+}
+
 .comments-area {
 	width: 900px;
 	max-width: 100vw;
@@ -81,6 +85,8 @@
 			.comment-content {
 				font-size: 14px;
 				margin-top: 0;
+				width: calc(100% - 200px);
+				padding-left: 200px;
 
 				p:last-child {
 					margin-bottom: 0;
