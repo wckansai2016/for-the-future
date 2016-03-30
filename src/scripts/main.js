@@ -29,6 +29,22 @@ $( _=> {
 		} else if( $window.scrollTop() < show_btn ) {
 			$to_top.fadeOut( 'normal' );
 		}
+
+		const scrollHeight = $( document ).height();
+		const scrollPosition = $window.height() + $window.scrollTop();
+		const $footer = $( 'footer' );
+
+		if( scrollHeight - scrollPosition + 10 <= $footer.height() ) {
+			$to_top.css( {
+				position: 'absolute',
+				bottom: $footer.height()
+			} );
+		} else {
+			$to_top.css( {
+				position: 'fixed',
+				bottom: "10px"
+			} );
+		}
 	} );
 
 } );
