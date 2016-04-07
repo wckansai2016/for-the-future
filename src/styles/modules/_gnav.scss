@@ -67,7 +67,7 @@
 		}
 	}
 
-	&.nav-open {
+	&[data-gnav=open] {
 		right: 0;
 	}
 
