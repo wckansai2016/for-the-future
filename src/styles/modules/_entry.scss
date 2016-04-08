@@ -4,9 +4,7 @@
 }
 
 .entry-header {
-	width: 900px;
 	margin: 0 auto 40px;
-	max-width: 100vw;
 
 	.entry-eyecatch {
 		font-size: 0;
@@ -51,9 +49,6 @@
 
 .entry-content,
 .entry-comments {
-	width: 900px;
-	max-width: calc(100vw - 40px);
-
 	margin: 0 auto;
 }
 
