@@ -6,11 +6,11 @@ $( _=> {
 	// hamburger menu
 	$( '.nav-btn' ).click( _=> {
 		$overlay.toggle();
-		$gnav.attr( 'data-gnav', 'open' );
+		$gnav.toggleClass( 'nav-open' );
 	} );
 	$overlay.click( _=> {
 		$overlay.toggle();
-		$gnav.attr( 'data-gnav', 'close' );
+		$gnav.removeClass( 'nav-open' );
 	} );
 
 	// to top button
