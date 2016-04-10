@@ -1,6 +1,8 @@
 /* entry */
 .singular-body {
 	color: $single-body-color;
+	max-width: $content-pc-width;
+	margin: 0 auto;
 }
 
 .entry-header {
