@@ -5,6 +5,9 @@
 	font-size: 24px;
 }
 .thumbnail-title-wrapper {
+	.thumbnail-title{
+		display: none;
+	}
 	&:hover {
 		.thumbnail-title {
 			text-decoration: none;
