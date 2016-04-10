@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "variables";
+@import "base/normalize";
+@import "base/elements";
+@import "modules/alignments";
+@import "modules/captions";
+@import "modules/gallery-container";
+
+body {
+	width: 900px;
+	max-width: calc(100% - 40px);
+
+	margin: 0 auto;
+	line-height: 1.8;
+
+	.sticky,
+	.gallery-caption,
+	.bypostauthor {
+		display: block;
+	}
+}
