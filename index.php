@@ -11,11 +11,11 @@
 		<?php if( is_tag() ) : ?>
 			<h2 class="archive-title"><?php _e( 'Tag', 'for-the-future' );?> : <?php single_tag_title();?></h2>
 		<?php endif;?>
-		
+
 		<div class="l-grid">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="l-grid-col l-grid-col--1-2 l-grid-col--large-1-4">
-					<article <?php post_class(); ?>>
+					<article class="thumbnail-title-wrapper" <?php post_class(); ?>>
 
 						<a href="<?php the_permalink(); ?>">
 							<?php
@@ -31,10 +31,14 @@
 								<?php
 							endif;
 							?>
+							<?php
+								$title = esc_html( get_the_title() );
+								if ( mb_strlen($title) > 160 ) :
+									$title = mb_substr($title,0,160).'...';
+								endif;
+							?>
+							<h1 class="thumbnail-title"><?php echo $title; ?></h1>
 						</a>
-						<!--
-	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-	-->
 					</article>
 				</div>
 
