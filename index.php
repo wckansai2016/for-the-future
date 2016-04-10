@@ -37,7 +37,7 @@
 									$title = mb_substr($title,0,160).'...';
 								endif;
 							?>
-							<h1 class="thumbnail-title"><?php echo $title; ?></h1>
+							<h1 class="thumbnail-title"><span class="thumbnail-title-body"><?php echo $title; ?></span></h1>
 						</a>
 					</article>
 				</div>
