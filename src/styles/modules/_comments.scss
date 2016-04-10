@@ -1,9 +1,6 @@
 /* comments */
 
 .comments-area {
-	width: 900px;
-	max-width: 100vw;
-
 	margin: 0 auto;
 	color: #222222;
 	color: $single-body-color;
@@ -28,21 +25,20 @@
 
 		.comment {
 			margin-top: 20px;
+			padding-left: 160px;
 
 			.comment-awaiting-moderation {
 				margin: 0;
 			}
 
 			.comment-meta {
-				width: calc(100% - 180px);
-				position: absolute;
-				padding-left: 180px;
+				position: relative;
 
 				.avatar {
 					border-radius: 10px;
 					border: solid 1px #b0b0b0;
 					position: absolute;
-					left: 0;
+					left: -160px;
 					top: 0;
 				}
 
@@ -50,9 +46,9 @@
 					display: none;
 				}
 
-				.comment-author, .comment-metadata {
+				.comment-author,
+				.comment-metadata {
 					display: inline-block;
-					vertical-align: bottom;
 				}
 
 				.comment-author {
@@ -66,15 +62,10 @@
 			}
 
 			.comment-content, .comment-awaiting-moderation, .reply {
-				width: 720px;
-				max-width: calc(100vw - 200px);
-				float: right;
-
-				padding: 25px 20px 0;
 				font-size: 14px;
 			}
 
-			.comment-awaiting-moderation{
+			.comment-awaiting-moderation {
 				padding-top: 35px;
 			}
 
@@ -82,9 +73,6 @@
 				font-size: 14px;
 				margin-top: 0;
 
-				p:last-child {
-					margin-bottom: 0;
-				}
 			}
 
 			.comment-body {
@@ -102,19 +90,16 @@
 	}
 
 	.comment-form {
-		font-size: 0;
 		margin: 0 0 10px 0;
-		& > p {
-			font-size: 1.0rem;
-		}
+		font-size: 1.0rem;
 
 		.comment-form-comment {
 			margin-bottom: 0;
 
 			textarea {
-				width: calc(100% - 28px);
-				max-width: calc(100% - 68px);
-				height: 176px;
+				box-sizing: border-box;
+				width: 100%;
+				height: 190px;
 				padding: 14px;
 			}
 		}
