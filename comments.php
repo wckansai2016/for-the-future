@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
-		<div class="comment-list">
+		<ul class="comment-list">
 			<?php
 				wp_list_comments( array(
 					'style'      => 'div',
@@ -28,7 +28,7 @@ if ( post_password_required() ) {
 					'avatar_size'=> 100
 				) );
 			?>
-		</div><!-- .comment-list -->
+		</ul><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
