@@ -5,6 +5,10 @@
 	font-size: 24px;
 }
 .thumbnail-title-wrapper {
+	a{
+		display: block;
+	}
+
 	.thumbnail-title{
 		display: none;
 	}
