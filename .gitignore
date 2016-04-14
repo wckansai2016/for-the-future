@@ -3,6 +3,7 @@ vendor
 .sass-cache
 bundle.js
 style.css
+editor-style.css
 gulpconfig.js
 dist
 *.map
