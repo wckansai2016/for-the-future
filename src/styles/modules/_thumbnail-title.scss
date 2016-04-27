@@ -40,7 +40,7 @@
 				opacity: 1.0;
 			}
 
-			.thumbnail-title-body{
+			.thumbnail-title-body-wrap{
 				top: 18%;
 				left: 15%;
 				width: 70%;
@@ -49,13 +49,25 @@
 				overflow: hidden;
 				z-index: 2;
 				color: #fff;
-				font-size: 16px;
+				font-size: 14px;
 				letter-spacing: 1.4px;
 				text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 				text-align: center;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.thumbnail-title-body{
+					white-space: nowrap;
+					width: 100%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+
 			}
 
-			.thumbnail-title-body, &:before, &:after{
+			.thumbnail-title-body-wrap:before,
+			.thumbnail-title-body-wrap:after{
 				display: block;
 				position: absolute;
 			}
