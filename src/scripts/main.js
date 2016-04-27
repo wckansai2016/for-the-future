@@ -15,7 +15,7 @@ $( _=> {
 
 	// to top button
 	const show_btn = 100;
-	const $to_top = $( '.site-footer .to-top' );
+	const $to_top = $( '.to-top' );
 	const $window = $( window );
 	$to_top.hide();
 	$to_top.on( 'click', evt=> {
@@ -32,16 +32,14 @@ $( _=> {
 
 		const scrollHeight = $( document ).height();
 		const scrollPosition = $window.height() + $window.scrollTop();
-		const $footer = $( 'footer' );
+		const $footer = $( '.site-footer' );
 
 		if( scrollHeight - scrollPosition + 10 <= $footer.height() ) {
 			$to_top.css( {
-				position: 'absolute',
 				bottom: $footer.height()
 			} );
 		} else {
 			$to_top.css( {
-				position: 'fixed',
 				bottom: "10px"
 			} );
 		}
