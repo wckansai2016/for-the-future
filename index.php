@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="l-container">
+<div class="l-container l-gallery-container">
 	<div>
 		<?php if( is_search() ) : ?>
 			<h2 class="archive-title"><?php _e( 'Search Result', 'for-the-future' );?> : <?php the_search_query();?></h2>
@@ -14,7 +14,7 @@
 
 		<div class="l-grid">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<div class="l-grid-col l-grid-col--1-2 l-grid-col--large-1-4">
+				<div class="l-grid-col l-grid-col--1-2 l-grid-col--medium-1-4 l-grid-col--large-1-4">
 					<article class="thumbnail-title-wrapper" <?php post_class(); ?>>
 
 						<a href="<?php the_permalink(); ?>">
