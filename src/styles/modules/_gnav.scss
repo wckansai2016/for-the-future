@@ -1,14 +1,22 @@
-
 .gnav {
 	overflow: auto;
 	position: fixed;
 	top: 0;
-	right: -25%;
-	width: 25%;
+	right: -80%;
+	width: 80%;
 	height: 100%;
 	background: #353535;
 	z-index: 9999;
 	transition: 0.3s ease-out;
+
+
+	@media #{$medium-up} {
+		&{
+			width: 300px;
+			right: -300px;
+		}
+	}
+
 	div {
 		ul {
 			padding: 0;
