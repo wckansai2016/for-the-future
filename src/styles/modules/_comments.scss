@@ -39,7 +39,6 @@
 
 			.comment-meta {
 				width: calc(100% - 180px);
-				position: absolute;
 				padding-left: 180px;
 
 				.avatar {
@@ -71,22 +70,25 @@
 
 			.comment-content, .comment-awaiting-moderation, .reply {
 				width: 720px;
-				max-width: calc(100vw - 200px);
-				float: right;
-
-				padding: 25px 20px 0;
+				max-width: calc(100vw - 180px);
 				font-size: 14px;
 			}
 
+			.reply{
+				float: right;
+				margin-top: 10px;
+			}
+
 			.comment-awaiting-moderation{
-				padding-top: 35px;
+				padding-top: 15px;
+				font-size: 0.6em;
 			}
 
 			.comment-content {
 				font-size: 14px;
 				margin-top: 0;
-				width: calc(100% - 200px);
-				padding-left: 200px;
+				width: calc(100% - 180px);
+				padding-left: 180px;
 
 				p:last-child {
 					margin-bottom: 0;
