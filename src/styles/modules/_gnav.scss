@@ -75,7 +75,7 @@
 		}
 	}
 
-	&.nav-open {
+	&[aria-expanded="true"] {
 		right: 0;
 	}
 
