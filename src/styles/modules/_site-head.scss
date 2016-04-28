@@ -1,5 +1,5 @@
 .site-head {
-	height: 125px;
+	min-height: 125px;
 	display: flex;
 	text-align: center;
 	align-items: center;
@@ -9,6 +9,7 @@
 	h1.logo {
 		margin: 0 auto;
 		font-size: 1.722em;
+		word-break:break-all;
 		a, a:hover, a:visited, a:active {
 			font-family: 'Noto Serif', 'Noto Serif Japanese', serif;
 			font-weight: 700;

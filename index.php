@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="l-container">
+<div class="l-container l-gallery-container">
 	<div>
 		<?php if( is_search() ) : ?>
 			<h2 class="archive-title"><?php _e( 'Search Result', 'for-the-future' );?> : <?php the_search_query();?></h2>
@@ -11,11 +11,11 @@
 		<?php if( is_tag() ) : ?>
 			<h2 class="archive-title"><?php _e( 'Tag', 'for-the-future' );?> : <?php single_tag_title();?></h2>
 		<?php endif;?>
-		
+
 		<div class="l-grid">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<div class="l-grid-col l-grid-col--1-2 l-grid-col--large-1-4">
-					<article <?php post_class(); ?>>
+				<div class="l-grid-col l-grid-col--1-2 l-grid-col--medium-1-4 l-grid-col--large-1-4">
+					<article class="thumbnail-title-wrapper" <?php post_class(); ?>>
 
 						<a href="<?php the_permalink(); ?>">
 							<?php
@@ -31,10 +31,20 @@
 								<?php
 							endif;
 							?>
+							<?php
+								$title = esc_html( get_the_title() );
+								if ( mb_strlen($title) > 160 ) :
+									$title = mb_substr($title,0,160).'...';
+								endif;
+							?>
+							<h1 class="thumbnail-title">
+								<span class="thumbnail-title-body-wrap">
+									<span class="thumbnail-title-body">
+										<?php echo $title; ?>
+									</span>
+								</span>
+							</h1>
 						</a>
-						<!--
-	<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-	-->
 					</article>
 				</div>
 

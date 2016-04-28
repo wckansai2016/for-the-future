@@ -4,3 +4,18 @@
 	margin: auto;
 	padding: 0 20px;
 }
+
+@media (max-width: $screen-medium-max){
+
+	.l-grid-col, .l-gallery-container{
+		padding: 0;
+		margin: 0;
+	}
+
+	.l-gallery-container{
+		.l-grid, .l-grid-col{
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
