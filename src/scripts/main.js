@@ -5,11 +5,11 @@ $( _=> {
 	const $gnav = $( '[data-gnav]' );
 	// hamburger menu
 	$( '.nav-btn' ).click( _=> {
-		$overlay.toggle();
+		$overlay.toggleClass( 'overlay-is-active' );
 		$gnav.toggleClass( 'nav-open' );
 	} );
 	$overlay.click( _=> {
-		$overlay.toggle();
+		$overlay.toggleClass( 'overlay-is-active' );
 		$gnav.removeClass( 'nav-open' );
 	} );
 
