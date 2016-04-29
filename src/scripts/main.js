@@ -6,11 +6,11 @@ $( _=> {
 	// hamburger menu
 	$( '.nav-btn' ).click( _=> {
 		$overlay.toggleClass( 'overlay-is-active' );
-		$gnav.toggleClass( 'nav-open' );
+		$gnav.attr( 'aria-expanded', $gnav.attr( 'aria-expanded' ) !== 'true' );
 	} );
 	$overlay.click( _=> {
 		$overlay.toggleClass( 'overlay-is-active' );
-		$gnav.removeClass( 'nav-open' );
+		$gnav.attr( 'aria-expanded', $gnav.attr( 'aria-expanded' ) !== 'true' );
 	} );
 
 	// to top button
