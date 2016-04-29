@@ -25,7 +25,7 @@
 				<div class="nav-btn-line"></div>
 				<span class="menu">MENU</span>
 			</button>
-			<nav class="gnav" data-gnav>
+			<nav class="gnav" data-gnav aria-expanded="false">
 				<?php get_search_form(); ?>
 				<?php wp_nav_menu( array(
 					'theme_location' => 'global_nav',

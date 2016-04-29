@@ -2264,7 +2264,7 @@ img {
 	font-size: 10px;
 	margin-top: 6px;
 }
-.gnav.nav-open {
+.gnav[aria-expanded="true"] {
 	right: 0;
 }
 .gnav .search-field {
