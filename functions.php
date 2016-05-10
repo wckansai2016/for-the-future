@@ -8,6 +8,8 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'jetpack-responsive-videos' );
+
 		//  navigations
 		register_nav_menus( array(
 			'global_nav' => esc_html__( 'global navigation', 'for-the-future' ),
