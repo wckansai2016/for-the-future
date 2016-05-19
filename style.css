@@ -451,10 +451,10 @@ dl {
 p {
 	margin-bottom: 28px;
 }
-ul li {
+ul > li {
 	list-style-type: square;
 }
-ol li {
+ol > li {
 	list-style-type: decimal;
 }
 em {
