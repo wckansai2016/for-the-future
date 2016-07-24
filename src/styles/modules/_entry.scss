@@ -52,13 +52,11 @@
 
 .entry-content,
 .entry-comments {
+	@extend .clearfix;
+
 	max-width: calc(100vw - 40px);
 
 	margin: 0 auto;
-
-	p {
-		@extend .clearfix;
-	}
 }
 
 .entry-content {
