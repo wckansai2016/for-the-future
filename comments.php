@@ -13,8 +13,8 @@ if ( post_password_required() ) {
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'for-the-future' ); ?></h2>
 			<div class="nav-links clearfix">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( '< PREV', 'for-the-future' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'NEXT >', 'for-the-future' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&lt;&nbsp;PREV', 'for-the-future' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'NEXT&nbsp;&gt;', 'for-the-future' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
@@ -35,8 +35,8 @@ if ( post_password_required() ) {
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'for-the-future' ); ?></h2>
 			<div class="nav-links clearfix">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( '< PREV', 'for-the-future' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'NEXT >', 'for-the-future' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&lt;&nbsp;PREV', 'for-the-future' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'NEXT&nbsp;&gt;', 'for-the-future' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
