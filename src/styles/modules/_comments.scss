@@ -156,6 +156,20 @@
 				}
 			}
 
+			#respond {
+				width: 90%;
+				margin: 0 auto;
+			}
+			h3#reply-title {
+				margin: 0;
+			}
+
+			#cancel-comment-reply-link {
+				font-weight: normal;
+				font-size: 14px;
+				text-decoration: underline;
+			}
+
 		}
 	}
 
