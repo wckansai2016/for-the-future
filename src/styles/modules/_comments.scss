@@ -80,8 +80,7 @@
 					position: absolute;
 					left: 10px;
 					top: 10px;
-					overflow: hidden;
-					text-overflow: ellipsis;
+					width: calc(100% - 80px);
 				}
 
 				.avatar {
@@ -95,7 +94,15 @@
 				.fn {
 					font-weight: normal;
 					font-size: 18px;
-					display: inline;
+					display: inline-block;
+					width: 80%;
+					height: 24px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					position: absolute;
+					left: 70px;
+					top: 0;
 				}
 
 				.says {
