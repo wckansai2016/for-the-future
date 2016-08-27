@@ -47,7 +47,6 @@ if ( post_password_required() ) {
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'for-the-future' ); ?></p>
-</div><!-- #comments -->
 	<?php endif;
 
 	comment_form(array(
