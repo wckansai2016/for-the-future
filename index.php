@@ -59,8 +59,8 @@
 					$temp_dir = esc_url( get_template_directory_uri() );
 					$args     = array(
 						'show_all'  => false,
-						'end_size'  => 1,
-						'mid_size'  => 1,
+						'end_size'  => 0,
+						'mid_size'  => 0,
 						'prev_next' => true,
 						'prev_text' => '<i class="fa fa-angle-left"></i> PREV',
 						'next_text' => 'NEXT <i class="fa fa-angle-right"></i>',
