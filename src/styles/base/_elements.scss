@@ -53,6 +53,27 @@ blockquote {
 	margin: 0;
 }
 
+q {
+	&:before {
+    content: open-quote;
+	}
+	&:after {
+    content: close-quote;
+	}
+}
+
+pre {
+	display: block;
+	white-space: pre;
+	background: #eee;
+	padding: 20px;
+}
+
+code {
+	word-wrap: break-word;
+	background: #eee;
+}
+
 table {
 	width: 100%;
 	font-size: 16px;
