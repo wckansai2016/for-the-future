@@ -1,3 +1,13 @@
+.index-nav-links {
+	/* sp */
+	.page-numbers {
+		display: none;
+	}
+	.prev, .current, .next {
+		display: inline-block;
+	}
+}
+
 /* singular, index */
 .nav-links {
 	margin-top: 80px;
@@ -34,7 +44,7 @@
 .index-nav-links {
 	display: inline-block;
 	a, span {
-		margin-right: 15px;
+		margin-right: 0px;
 	}
 	.page-numbers {
 		padding: 3px 9px;
@@ -98,5 +108,18 @@
 
 	> a:last-child .page-numbers, > .page-numbers:last-child {
 		margin-right: 0;
+	}
+}
+
+
+@media #{$medium-up} {
+	/* reset sp */
+	.index-nav-links {
+		.page-numbers {
+			display: inline-block;
+		}
+		a, span {
+			margin-right: 15px;
+		}
 	}
 }
