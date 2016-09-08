@@ -51,6 +51,6 @@ if ( post_password_required() ) {
 
 	comment_form(array(
 		'title_reply'=>'',
-		'comment_notes_before'=>'<p class="comment-notes">' . __( 'Your email address will not be published.' ) . '</p>'
+		'comment_notes_before'=>'<p class="comment-notes">' . __( 'Your email address will not be published.', 'for-the-future') . '</p>'
 	)); ?>
 </section>
