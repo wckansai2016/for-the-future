@@ -1,0 +1,38 @@
+.sticky-icon,
+.sticky-label {
+	display: none;
+}
+
+.sticky .sticky-label {
+	display: inline;
+	color: #fff;
+	background: #000;
+	font-size: 12px;
+	padding: 2px 4px;
+	margin-right: 10px;
+}
+
+@media #{$large-up} {
+	.sticky .sticky-label {
+		display: none;
+	}
+	.sticky .sticky-icon {
+		display: block;
+	}
+	.sticky {
+		position: relative;
+		.sticky-icon {
+			position: absolute;
+			bottom: 20px;
+			text-align: center;
+			left: 0;
+			right: 0;
+			color: #fff;
+			line-height: 0.7;
+			span {
+				font-size: 9px;
+			}
+		}
+	}
+}
+

@@ -15,36 +15,39 @@
 		<div class="l-grid">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="l-grid-col l-grid-col--1-2 l-grid-col--medium-1-4 l-grid-col--large-1-4">
-					<article class="thumbnail-title-wrapper" <?php post_class(); ?>>
-
-						<a href="<?php the_permalink(); ?>">
-							<?php
-							if( has_post_thumbnail() ) :?>
-								<div class="square-thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>');">
-									<?php the_post_thumbnail();?>
-								</div>
+					<article class="thumbnail-title-wrapper">
+						<div <?php post_class(); ?>><!-- div for post_class -->
+							<a href="<?php the_permalink(); ?>">
 								<?php
-							else : ?>
-								<div class="square-thumbnail" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png');">
-									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png" alt="" />
-								</div>
-								<?php
-							endif;
-							?>
-							<?php
-								$title = esc_html( get_the_title() );
-								if ( mb_strlen($title) > 160 ) :
-									$title = mb_substr($title,0,160).'...';
+								if( has_post_thumbnail() ) :?>
+									<div class="square-thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url();?>');">
+										<?php the_post_thumbnail();?>
+									</div>
+									<?php
+								else : ?>
+									<div class="square-thumbnail" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png');">
+										<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/img_noimg.png" alt="" />
+									</div>
+									<?php
 								endif;
-							?>
-							<h1 class="thumbnail-title">
-								<span class="thumbnail-title-body-wrap">
-									<span class="thumbnail-title-body">
-										<?php echo $title; ?>
+								?>
+								<?php
+									$title = esc_html( get_the_title() );
+									if ( mb_strlen($title) > 160 ) :
+										$title = mb_substr($title,0,160).'...';
+									endif;
+								?>
+								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i> STICKY</div>
+								<h1 class="thumbnail-title">
+									<span class="thumbnail-title-body-wrap">
+										<span class="thumbnail-title-body">
+											<?php echo $title; ?>
+										</span>
 									</span>
-								</span>
-							</h1>
-						</a>
+								</h1>
+								<div class="sticky-icon"><i class="fa fa-heart" aria-hidden="true"></i><br><span>STICKY</span></div><!-- for sticky -->
+							</a>
+						</div>
 					</article>
 				</div>
 
