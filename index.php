@@ -37,7 +37,7 @@
 										$title = mb_substr($title,0,160).'...';
 									endif;
 								?>
-								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i> STICKY</div>
+								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;STICKY</div><!-- for sticky -->
 								<h1 class="thumbnail-title">
 									<span class="thumbnail-title-body-wrap">
 										<span class="thumbnail-title-body">
