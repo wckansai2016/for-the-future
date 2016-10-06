@@ -15,7 +15,7 @@
 					<?php
 					$options = get_option( 'for_the_future_theme_options' );
 					if ( ! empty( $options['head_logo'] ) ) :
-						print '<img src="' . esc_url( $options['head_logo'] ) . '" alt="' . get_bloginfo( 'name' ) . '" />';
+						print '<img src="' . esc_url( $options['head_logo'] ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) )  . '" />';
 					else :
 						bloginfo( 'name' );
 					endif;
