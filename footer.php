@@ -21,7 +21,7 @@
 				) );
 			endif;
 			?>
-			<p class="copyright">&copy;<?php echo date('Y '); bloginfo('name'); ?> All rights reserved.</p>
+			<p class="copyright"><?php printf( esc_html__( '&copy; %1s %2s All rights reserved.' ), date('Y'), get_bloginfo( 'name') );?></p>
 		</div>
 	</footer>
 </div>
