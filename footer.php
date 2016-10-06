@@ -21,7 +21,7 @@
 				) );
 			endif;
 			?>
-			<p class="copyright"><?php printf( esc_html__( '&copy; %1s %2s All rights reserved.' ), date('Y'), get_bloginfo( 'name') );?></p>
+			<p class="copyright"><?php printf( esc_html__( '&copy; %1s %2s All rights reserved.', 'for-the-future' ), date('Y'), get_bloginfo( 'name') );?></p>
 		</div>
 	</footer>
 </div>
