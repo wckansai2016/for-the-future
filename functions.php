@@ -66,7 +66,7 @@ function for_the_future_customize_register( $wp_customize ) {
 		$wp_customize,
 		'head_logo',
 		array(
-			'label'    => _x( 'Header logo image', 'for-the-future theme-customizer', 'for-the-future' ),
+			'label'    => _x( 'Header logo image', 'Label in customizer for header logo.', 'for-the-future' ),
 			'section'  => 'for_the_future_design',
 			'settings' => 'for_the_future_theme_options[head_logo]',
 			'priority' => 501,
@@ -85,7 +85,7 @@ function for_the_future_customize_register( $wp_customize ) {
 		$wp_customize,
 		'foot_logo',
 		array(
-			'label'    => _x( 'Footer logo image', 'for-the-future theme-customizer', 'for-the-future' ),
+			'label'    => _x( 'Footer logo image', 'Label in customizer for footer logo.', 'for-the-future' ),
 			'section'  => 'for_the_future_design',
 			'settings' => 'for_the_future_theme_options[foot_logo]',
 			'priority' => 501,
