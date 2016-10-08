@@ -36,7 +36,7 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 		) );
 
 		set_post_thumbnail_size( 475, 475, true );
-		add_image_size( 'post-thumbnail-2x', 950, 950, true );
+		add_image_size( 'for-the-future-post-thumbnail-2x', 950, 950, true );
 
 	}
 endif;
