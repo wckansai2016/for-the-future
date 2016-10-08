@@ -21,8 +21,7 @@
 				) );
 			endif;
 			?>
-			<p class="copyright">&copy;<?php echo date( 'Y ' );
-				bloginfo( 'name' ); ?> All rights reserved.</p>
+			<p class="copyright">&copy;<?php echo date('Y '); bloginfo('name'); ?> All rights reserved.</p>
 		</div>
 	</footer>
 </div>
