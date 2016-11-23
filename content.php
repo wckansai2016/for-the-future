@@ -2,7 +2,7 @@
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="entry-eyecatch">
-				<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+				<?php the_post_thumbnail( 'full' ); ?>
 			</div>
 		<?php endif; ?>
 
