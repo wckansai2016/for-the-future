@@ -19,7 +19,7 @@
 						<div <?php post_class(); ?>><!-- div for post_class -->
 							<a href="<?php the_permalink(); ?>">
 								<?php if( has_post_thumbnail() ) : ?>
-									<div class="square-thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">
+									<div class="square-thumbnail" style="background-image: url('<?php echo esc_url( get_the_post_thumbnail_url() ); ?>');">
 										<?php the_post_thumbnail(); ?>
 									</div>
 								<?php else : ?>
