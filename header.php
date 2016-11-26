@@ -23,7 +23,7 @@
 				</a></h1>
 			<button type="button" class="nav-btn">
 				<div class="nav-btn-line"></div>
-				<span class="menu">MENU</span>
+				<span class="menu"><?php _e( 'MENU', 'for-the-future' ); ?></span>
 			</button>
 			<nav class="gnav" data-gnav aria-expanded="false">
 				<?php get_search_form(); ?>

@@ -33,7 +33,7 @@
 										$title = mb_substr($title,0,160).'...';
 									endif;
 								?>
-								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;STICKY</div><!-- for sticky -->
+								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;<?php _e( 'STICKY', 'for-the-future' ); ?>STICKY</div><!-- for sticky -->
 								<h1 class="thumbnail-title">
 									<span class="thumbnail-title-body-wrap">
 										<span class="thumbnail-title-body">
@@ -41,7 +41,7 @@
 										</span>
 									</span>
 								</h1>
-								<div class="sticky-icon"><i class="fa fa-heart" aria-hidden="true"></i><br><span>STICKY</span></div><!-- for sticky -->
+								<div class="sticky-icon"><i class="fa fa-heart" aria-hidden="true"></i><br><span><?php _e( 'STICKY', 'for-the-future' ); ?></span></div><!-- for sticky -->
 							</a>
 						</div>
 					</article>
@@ -56,8 +56,8 @@
 				<div class="index-nav-links">
 					<?php
 					$args = array(
-						'prev_text' => '<i class="fa fa-angle-left"></i> PREV',
-						'next_text' => 'NEXT <i class="fa fa-angle-right"></i>',
+						'prev_text' => '<i class="fa fa-angle-left"></i>' . __( 'PREV', 'for-the-future' ),
+						'next_text' => __( 'NEXT', 'for-the-future' ) . '<i class="fa fa-angle-right"></i>'
 					);
 					echo the_posts_pagination( $args );
 					?>
