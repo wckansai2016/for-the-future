@@ -4,7 +4,7 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 
 	function for_the_future_setup() {
 
-		load_theme_textdomain( 'for-the-future', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'for-the-future' );
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support( 'post-thumbnails' );
