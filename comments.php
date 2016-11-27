@@ -4,7 +4,7 @@ if ( post_password_required() ) {
 }
 ?>
 <section class="comments-area">
-	<h1 class="comments-title">Comments</h1>
+	<h1 class="comments-title"><?php _e( 'Comments', 'for-the-future' ); ?></h1>
 
 	<?php if ( have_comments() ) : ?>
 
