@@ -30,6 +30,8 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
+		add_theme_support( 'custom-logo' );
+
 		add_editor_style( array(
 			'editor-style.css',
 			'//fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700',
@@ -52,25 +54,6 @@ function for_the_future_customize_register( $wp_customize ) {
 	$wp_customize->add_section( 'for_the_future_design', array(
 		'title'    => _x( 'Design settings', 'for-the-future theme-customizer', 'for-the-future' ),
 		'priority' => 500,
-	) );
-
-	// header logo
-	$wp_customize->add_setting( 'for_the_future_theme_options[head_logo]', array(
-		'default'           => '',
-		'type'              => 'option',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_url_raw',
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Image_Control(
-		$wp_customize,
-		'head_logo',
-		array(
-			'label'    => _x( 'Header logo image', 'Label in customizer for header logo.', 'for-the-future' ),
-			'section'  => 'for_the_future_design',
-			'settings' => 'for_the_future_theme_options[head_logo]',
-			'priority' => 501,
-		)
 	) );
 
 	// footer logo
