@@ -12,14 +12,14 @@
 		<header id="pagetop" class="site-head">
 			<div class="overlay"></div>
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<?php
-					$options = get_option( 'for_the_future_theme_options' );
-					if ( ! empty( $options['head_logo'] ) ) :
-						print '<img src="' . esc_url( $options['head_logo'] ) . '" alt="' . esc_attr( get_bloginfo( 'name' ) )  . '" />';
-					else :
-						bloginfo( 'name' );
-					endif;
-					?>
+			<?php
+				the_custom_logo();
+				if (!has_custom_logo()) {
+			?>
+				<h1><?php bloginfo('name'); ?></h1>
+			<?php
+				}
+			?>
 				</a></h1>
 			<button type="button" class="nav-btn">
 				<div class="nav-btn-line"></div>
