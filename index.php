@@ -33,7 +33,9 @@
 										$title = mb_substr($title,0,160).'...';
 									endif;
 								?>
-								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;<?php _e( 'STICKY', 'for-the-future' ); ?>STICKY</div><!-- for sticky -->
+								<?php if( is_sticky() ) : ?>
+								<div class="sticky-label"><i class="fa fa-heart" aria-hidden="true"></i><br><span><?php _e( 'STICKY', 'for-the-future' ); ?></span></div><!-- for sticky -->
+								<?php endif; ?>
 								<h1 class="thumbnail-title">
 									<span class="thumbnail-title-body-wrap">
 										<span class="thumbnail-title-body">
@@ -41,7 +43,6 @@
 										</span>
 									</span>
 								</h1>
-								<div class="sticky-icon"><i class="fa fa-heart" aria-hidden="true"></i><br><span><?php _e( 'STICKY', 'for-the-future' ); ?></span></div><!-- for sticky -->
 							</a>
 						</div>
 					</article>
