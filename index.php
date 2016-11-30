@@ -29,8 +29,8 @@
 								<?php endif; ?>
 								<?php
 									$title = esc_html( get_the_title() );
-									if ( mb_strlen($title) > 160 ) :
-										$title = mb_substr($title,0,160).'...';
+									if ( mb_strlen( $title ) > 160 ) :
+										$title = mb_substr( $title, 0, 160 ) . '...';
 									endif;
 								?>
 								<?php if( is_sticky() ) : ?>
@@ -60,7 +60,7 @@
 						'prev_text' => '<i class="fa fa-angle-left"></i>' . __( 'PREV', 'for-the-future' ),
 						'next_text' => __( 'NEXT', 'for-the-future' ) . '<i class="fa fa-angle-right"></i>'
 					);
-					echo the_posts_pagination( $args );
+					the_posts_pagination( $args );
 					?>
 				</div>
 			</div>
