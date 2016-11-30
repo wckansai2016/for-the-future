@@ -5,7 +5,7 @@ Requires at least: 4.5
 Tested up to: 4.6.1
 Stable tag:
 License: GNU General Public License v3 or later
-License URI: https://github.com/wckansai2016/for-the-future/blob/master/LICENSE
+License URI: LICENSE
 
 == Description ==
 simple gallery theme
