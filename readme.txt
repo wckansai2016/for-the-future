@@ -40,4 +40,6 @@ Source : http://fontawesome.io
 For the future, Copyright 2016 WordCamp Kansai 2016
 For the future is distributed under the terms of the GNU GPL
 
-screenshot.png used in the screenshot is taken by the theme author and is released under GPL.
+screenshots/screenshot.png used in the screenshot is taken by the theme author and is released under GPL.
+
+All images used in the screenshot(under screenshots/images) is taken by Nahoko Tokumoto(@natashanatashanatashanatasha) and is released under GPL.
