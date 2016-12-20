@@ -30,7 +30,11 @@ if ( ! function_exists( 'for_the_future_setup' ) ) :
 			'default-image' => '',
 		) ) );
 
-		add_theme_support( 'custom-logo' );
+		add_theme_support( 'custom-logo', array(
+			'width'       => 250,
+			'height'      => 37,
+			'flex-width'  => true,
+		) );
 
 		add_editor_style( array(
 			'editor-style.css',
