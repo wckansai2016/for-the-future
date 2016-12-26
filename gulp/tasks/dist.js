@@ -27,7 +27,8 @@ gulp.task('copy', function() {
 				"!composer.json",
 				"!bower.json",
 				"!package.json",
-				"!./node_modules/**/*.*"
+				"!./node_modules/**/*.*",
+				"!./screenshots/**/*.*"
 			],
 			{ base: './' }
 		)
