@@ -11,16 +11,16 @@
 	<div class="l-container">
 		<header id="pagetop" class="site-head">
 			<div class="overlay"></div>
-			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-			<?php
-				the_custom_logo();
-				if (!has_custom_logo()) {
-			?>
-				<h1><?php bloginfo('name'); ?></h1>
-			<?php
-				}
-			?>
-				</a></h1>
+			<h1 class="logo">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php
+					if( has_custom_logo() ) :
+						$custom_logo_id = get_theme_mod( 'custom_logo' );
+						$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+						echo '<img src="' . $image[0] . '" alt="">';
+					endif;
+					bloginfo( 'name' );
+				?></a>
+			</h1>
 			<button type="button" class="nav-btn">
 				<div class="nav-btn-line"></div>
 				<span class="menu"><?php _e( 'MENU', 'for-the-future' ); ?></span>
