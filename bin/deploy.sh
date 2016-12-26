@@ -20,9 +20,9 @@ fi
 
 git clone -b dist --quiet "https://github.com/${TRAVIS_REPO_SLUG}.git" dist
 
-rm -rf dist
+rm -rf dist/*
 
-npm run dist/*
+npm run dist
 
 cd dist
 
