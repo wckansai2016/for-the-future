@@ -26,6 +26,9 @@ simple gallery theme
 = 1.1.1 =
 * This version fixed some issues.
 
+= 1.1.2 =
+* Fix a spec of custom-logo etc.
+
 == Third-party Resources ==
 
 Normalize.css
@@ -42,4 +45,4 @@ For the future is distributed under the terms of the GNU GPL
 
 screenshot.png used in the screenshot is taken by the theme author and is released under GPL.
 
-All images used in the screenshot(under screenshots/images) is taken by Nahoko Tokumoto(@natashanatashanatashanatasha) and is released under GPL.
+All images used in the screenshot(https://github.com/wckansai2016/for-the-future/tree/master/screenshots/images) is taken by Nahoko Tokumoto(@natashanatashanatashanatasha) and is released under GPL.
