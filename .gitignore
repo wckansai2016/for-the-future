@@ -8,3 +8,4 @@ gulpconfig.js
 dist
 *.map
 .DS_Store
+.node-version
