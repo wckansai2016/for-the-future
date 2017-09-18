@@ -30,7 +30,7 @@ simple gallery theme
 * Fix a spec of custom-logo etc.
 
 = 1.1.3 =
-* Fix meta viewport.
+* Fix meta viewport
 
 == Third-party Resources ==
 
