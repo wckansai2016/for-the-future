@@ -29,6 +29,9 @@ simple gallery theme
 = 1.1.2 =
 * Fix a spec of custom-logo etc.
 
+= 1.1.3 =
+* Fix meta viewport.
+
 == Third-party Resources ==
 
 Normalize.css
