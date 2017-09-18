@@ -1,3 +1,4 @@
+.node-version
 node_modules
 vendor
 .sass-cache
@@ -8,4 +9,3 @@ gulpconfig.js
 dist
 *.map
 .DS_Store
-.node-version
