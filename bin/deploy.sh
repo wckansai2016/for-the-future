@@ -17,7 +17,6 @@ if [[ "7" != "$TRAVIS_PHP_VERSION" ]]; then
 	exit
 fi
 
-
 git clone -b dist --quiet "https://github.com/${TRAVIS_REPO_SLUG}.git" dist
 
 rm -rf dist/*
