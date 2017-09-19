@@ -12,11 +12,10 @@ if [[ "master" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
-if [[ "5.3" != "$TRAVIS_PHP_VERSION" ]]; then
-	echo "deploy only 5.3"
+if [[ "7" != "$TRAVIS_PHP_VERSION" ]]; then
+	echo "deploy only 7"
 	exit
 fi
-
 
 git clone -b dist --quiet "https://github.com/${TRAVIS_REPO_SLUG}.git" dist
 
